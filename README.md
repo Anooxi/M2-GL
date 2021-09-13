@@ -13,9 +13,9 @@ Master 2 - Génie Logiciel - Suite du Master 1 - AIGLE
 
 * [HAI913I - Evolution et Restructuration des logiciels](./S1/HAI913---ER "HAI913---ER")
 
-* [HAI914I - Gestion des données au delà de SQL (NoSQL)](./S1/HAI914---NSQL "HAI914---NSQL" )
+* [HAI914I - Gestion des données au delà de SQL (NoSQL)](./S1/HAI914---NSQL "HAI914---NSQL")
 
-* [HAI916I - Intelligence Artificielle pour le Génie Logiciel](./S1/HAI916---IA "HAI916---IA")
+* [HAI916I - Intelligence Artificielle pour le Génie Logiciel](<./S1/HAI916 - IA> "HAI916---IA")
 
 * [HAI919I - Ingénierie des modèles](./S1/HAI919---IM "HAI916---IM")
 
