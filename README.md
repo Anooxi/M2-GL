@@ -17,7 +17,7 @@ Master 2 - Génie Logiciel - Suite du Master 1 - AIGLE
 
 * [HAI916I - Intelligence Artificielle pour le Génie Logiciel](<./S1/HAI916 - IA> "HAI916 - IA")
 
-* [HAI919I - Ingénierie des modèles](<./S1/HAI919 - IM "HAI916 - IM")
+* [HAI919I - Ingénierie des modèles](<./S1/HAI919 - IM> "HAI916 - IM")
 
 * [HAI931I - Système réflexifs, models@runtime](<./S1/HAI931 - SRMR> "HAI931 - SRMR")
 
