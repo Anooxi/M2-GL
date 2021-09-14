@@ -5,6 +5,8 @@ Master 2 - Génie Logiciel - Suite du Master 1 - AIGLE
 
 1. [Résumé d'article utilisant l'IA pour une tâche de GL à réaliser (pour le 19 septembre 23h)](https://moodle.umontpellier.fr/mod/assign/view.php?id=446090)
    * [Lien du document](https://docs.google.com/document/d/12cZ_Hm2PdsH7sRl-aORkhoqkNL0qzl4t51bxRreBGGA)
+   
+2. [HAI913 - TP1 - Binôme avec Thomas (sauf ex2) (Faire de préference avant le 21 septembre)](<./S1/HAI913 - ER/TD-TPs/TP1> "Lien TP")
 
 ## Semestre 1
 
