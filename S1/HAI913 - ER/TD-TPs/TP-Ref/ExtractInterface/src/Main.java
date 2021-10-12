@@ -1,31 +1,26 @@
-class ListeTableau{
-    public boolean add(Object o) {return true;}
-    public boolean isEmpty() {return true;}
-    public Object get(int i) {return null;}
+class ListeTableau implements IMegaListeGet {
     private void secretLT(){}
     public static void staticLT() {}
     int nbLT;
 }
-class ListeChainee{
-    public boolean add(Object o) {return true;}
-    public boolean isEmpty() {return true;}
-    public Object get(int i) {return null;}
-    public Object peek() {return null;}
-    public Object poll() {return null;}
+class ListeChainee implements IMegaListeGet,IMegaListePeekPool {
     private void secretLC(){}
 }
-class QueueDoubleEntree{
-    public boolean add(Object o) {return true;}
-    public boolean isEmpty() {return true;}
-    public Object peek() {return null;}
-    public Object poll() {return null;}
+class QueueDoubleEntree implements IMegaListePeekPool, IMegaListe{
     private void secretQDE(){}
 }
-class QueueAvecPriorite{
-    public boolean add(Object o) {return true;}
-    public boolean isEmpty() {return true;}
-    public Object peek() {return null;}
-    public Object poll() {return null;}
+class QueueAvecPriorite implements IMegaListePeekPool , IMegaListe{
     public Object comparator() {return null;}
     private void secretQAP(){}
+}
+interface IMegaListe{
+    default boolean add(Object o){return true;}
+    default boolean isEmpty(){return true;}
+}
+interface IMegaListeGet extends IMegaListe{
+    default Object get(int i) {return null;}
+}
+interface IMegaListePeekPool{
+    default Object peek() {return null;}
+    default Object poll() {return null;}
 }
