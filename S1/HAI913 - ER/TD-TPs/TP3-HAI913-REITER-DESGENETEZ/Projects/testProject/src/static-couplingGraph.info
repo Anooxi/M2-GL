@@ -1,0 +1,144 @@
+Number of classes : 5 classes
+Total number of calls : 6 calls
+
+Class calls :
+
+	Class : package1.B : 
+		class called -> package1.A (5 time(s))
+
+	Class : package1.C : 
+		class called -> package1.A (1 time(s))
+Number of classes : 5 classes
+Total number of calls : 8 calls
+
+Class calls :
+
+	Class : package1.B : 
+		class called -> package1.A (5 time(s))
+
+	Class : package1.C : 
+		class called -> package1.A (2 time(s))
+		class called -> package1.B (1 time(s))
+Number of classes : 5 classes
+Total number of calls : 8 calls
+
+Class calls :
+
+	Class : package1.B : 
+		class called -> package1.A (5 time(s))
+
+	Class : package1.C : 
+		class called -> package1.A (2 time(s))
+		class called -> package1.B (1 time(s))
+Number of classes : 5 classes
+Total number of calls : 8 calls
+
+Class calls :
+
+	Class : package1.B : 
+		class called -> package1.A (5 time(s))
+
+	Class : package1.C : 
+		class called -> package1.A (2 time(s))
+		class called -> package1.B (1 time(s))
+Number of classes : 5
+Total number of calls : 8
+
+Class calls :
+
+	Class : package1.B : 
+		class called -> package1.A (5 time(s))
+
+	Class : package1.C : 
+		class called -> package1.A (2 time(s))
+		class called -> package1.B (1 time(s))
+Number of classes : 5
+Total number of calls : 8
+
+Class calls :
+	Class : package1.B : 
+		 ->package1.A [5 time(s)]
+	Class : package1.C : 
+		 ->package1.A [2 time(s)]
+		 ->package1.B [1 time(s)]
+Number of classes : 5
+Total number of calls : 8
+
+Class calls :
+	Class : package1.B : 
+		 ---> package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> package1.A [2 time(s)]
+		 ---> package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> package1.A [2 time(s)]
+		 ---> package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]
+
+Number of classes : 5
+Total number of calls : 8
+Class calls :
+	Class : package1.B : 
+		 ---> Class : package1.A [5 time(s)]
+	Class : package1.C : 
+		 ---> Class : package1.A [2 time(s)]
+		 ---> Class : package1.B [1 time(s)]

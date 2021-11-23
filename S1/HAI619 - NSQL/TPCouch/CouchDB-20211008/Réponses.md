@@ -25,24 +25,55 @@ curl -X GET $COUCH3/reiter_occitanie/34180
 ## 4.1.1
 function(doc){
   if (doc.type == 'old_region') {
-    emit(null, doc._id)
+    emit(doc.reg_nom, doc._id)
   }
 }
+
 ## 4.1.2
 function(doc){
     if(doc.type == 'commune'){
-        emit(null, {
-            "id": doc._id,
-            "longitude": doc.longitude,
-            "latitude": doc.latitude
+        emit(doc.nom, {
+          "id<!--  -->": doc._id,
+          "longitude": doc.longitude,
+          "latitude": doc.latitude
         });
     }
 }
+
 ## 4.1.3
+function(doc){
+  if(doc.type == 'commune' && doc.nom == 'MONTPELLIER'){
+      emit(doc.nom , {
+        "insee": doc.codeInsee,
+        "departement": doc.dep,
+        "longitude": doc.longitude,
+        "latitude": doc.latitude
+      });
+  }
+}
+
 ## 4.1.4
+function (doc) {
+  if (doc.type == 'region' && doc.nom_reg == 'Occitanie') { 
+    emit("président",{
+      "nom" : doc.president.nom, 
+      "prenom" : doc.president.prenom}
+      ); 
+    }
+}
 
 ## 4.2.1
+function (doc) { // Group level 1 , reduce _sum
+  if(doc.type == "commune"){
+    emit("old reg :" + doc.old_reg,1);
+    emit("dep :" + doc.dep,1);
+    emit("communes",1);
+  }
+}
 ## 4.2.2
+function(doc) {
+  
+}
 ## 4.2.3
 ## 4.2.4
 

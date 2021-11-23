@@ -1,0 +1,294 @@
+ClassCouple.java : structural.flyweight.Circle et structural.flyweight.Test se sont appelee l'une l'autre 2 fois. 
+structural.flyweight.Circle : 100.0%  et structural.flyweight.Test : 0.0% 
+
+ClassCouple.java : structural.flyweight.ShapeFactory et structural.flyweight.Test se sont appelee l'une l'autre 1 fois. 
+structural.flyweight.ShapeFactory : 100.0%  et structural.flyweight.Test : 0.0% 
+
+ClassCouple.java : creational.factory.EnemyShipFactory et creational.factory.EnemyShipTesting se sont appelee l'une l'autre 1 fois. 
+creational.factory.EnemyShipFactory : 100.0%  et creational.factory.EnemyShipTesting : 0.0% 
+
+ClassCouple.java : creational.factory.EnemyShipFactory et creational.factory.Test se sont appelee l'une l'autre 1 fois. 
+creational.factory.EnemyShipFactory : 100.0%  et creational.factory.Test : 0.0% 
+
+ClassCouple.java : behavioral.memento.CareTaker et behavioral.memento.Test se sont appelee l'une l'autre 4 fois. 
+behavioral.memento.CareTaker : 100.0%  et behavioral.memento.Test : 0.0% 
+
+ClassCouple.java : behavioral.mediator.User et behavioral.mediator.ChatRoom se sont appelee l'une l'autre 2 fois. 
+behavioral.mediator.User : 100.0%  et behavioral.mediator.ChatRoom : 0.0% 
+
+ClassCouple.java : behavioral.mediator.User et behavioral.mediator.ChatUser se sont appelee l'une l'autre 3 fois. 
+behavioral.mediator.User : 100.0%  et behavioral.mediator.ChatUser : 0.0% 
+
+ClassCouple.java : behavioral.mediator.User et behavioral.mediator.Test se sont appelee l'une l'autre 5 fois. 
+behavioral.mediator.User : 100.0%  et behavioral.mediator.Test : 0.0% 
+
+ClassCouple.java : structural.facade.BankAccount et structural.facade.BankAccountBalanceSystem se sont appelee l'une l'autre 4 fois. 
+structural.facade.BankAccount : 100.0%  et structural.facade.BankAccountBalanceSystem : 0.0% 
+
+ClassCouple.java : structural.facade.BankAccount et structural.facade.BankAccountNumberChecker se sont appelee l'une l'autre 1 fois. 
+structural.facade.BankAccount : 100.0%  et structural.facade.BankAccountNumberChecker : 0.0% 
+
+ClassCouple.java : structural.facade.BankAccount et structural.facade.BankAccountSecurityCodeChecker se sont appelee l'une l'autre 1 fois. 
+structural.facade.BankAccount : 100.0%  et structural.facade.BankAccountSecurityCodeChecker : 0.0% 
+
+ClassCouple.java : structural.facade.BankAccount et structural.facade.BankAccountWelcomeWindow se sont appelee l'une l'autre 2 fois. 
+structural.facade.BankAccount : 100.0%  et structural.facade.BankAccountWelcomeWindow : 0.0% 
+
+ClassCouple.java : creational.singleton.SingletonRegistry et creational.singleton.Singleton se sont appelee l'une l'autre 2 fois. 
+creational.singleton.SingletonRegistry : 100.0%  et creational.singleton.Singleton : 0.0% 
+
+ClassCouple.java : structural.decorator.Beverage et structural.decorator.CaramelDecorator se sont appelee l'une l'autre 2 fois. 
+structural.decorator.Beverage : 100.0%  et structural.decorator.CaramelDecorator : 0.0% 
+
+ClassCouple.java : structural.decorator.Beverage et structural.decorator.SugarDecorator se sont appelee l'une l'autre 2 fois. 
+structural.decorator.Beverage : 100.0%  et structural.decorator.SugarDecorator : 0.0% 
+
+ClassCouple.java : structural.decorator.Beverage et structural.decorator.Test se sont appelee l'une l'autre 2 fois. 
+structural.decorator.Beverage : 100.0%  et structural.decorator.Test : 0.0% 
+
+ClassCouple.java : behavioral.command.TV et behavioral.command.SwitchChannelCommand se sont appelee l'une l'autre 5 fois. 
+behavioral.command.TV : 100.0%  et behavioral.command.SwitchChannelCommand : 0.0% 
+
+ClassCouple.java : behavioral.command.TV et behavioral.command.SwitchOffCommand se sont appelee l'une l'autre 3 fois. 
+behavioral.command.TV : 100.0%  et behavioral.command.SwitchOffCommand : 0.0% 
+
+ClassCouple.java : behavioral.command.TV et behavioral.command.SwitchOnCommand se sont appelee l'une l'autre 3 fois. 
+behavioral.command.TV : 100.0%  et behavioral.command.SwitchOnCommand : 0.0% 
+
+ClassCouple.java : structural.adapter.EnemyTank et structural.adapter.Test se sont appelee l'une l'autre 3 fois. 
+structural.adapter.EnemyTank : 100.0%  et structural.adapter.Test : 0.0% 
+
+ClassCouple.java : structural.adapter.EnemyTank et structural.adapter.TestEnemyAttackers se sont appelee l'une l'autre 3 fois. 
+structural.adapter.EnemyTank : 100.0%  et structural.adapter.TestEnemyAttackers : 0.0% 
+
+ClassCouple.java : behavioral.memento.Memento et behavioral.memento.Originator se sont appelee l'une l'autre 1 fois. 
+behavioral.memento.Memento : 100.0%  et behavioral.memento.Originator : 0.0% 
+
+ClassCouple.java : behavioral.chain_of_responsibility.LogRequest et behavioral.chain_of_responsibility.ConsoleLogger se sont appelee l'une l'autre 1 fois. 
+behavioral.chain_of_responsibility.LogRequest : 100.0%  et behavioral.chain_of_responsibility.ConsoleLogger : 0.0% 
+
+ClassCouple.java : behavioral.chain_of_responsibility.LogRequest et behavioral.chain_of_responsibility.ErrorLogger se sont appelee l'une l'autre 1 fois. 
+behavioral.chain_of_responsibility.LogRequest : 100.0%  et behavioral.chain_of_responsibility.ErrorLogger : 0.0% 
+
+ClassCouple.java : behavioral.chain_of_responsibility.LogRequest et behavioral.chain_of_responsibility.FileLogger se sont appelee l'une l'autre 2 fois. 
+behavioral.chain_of_responsibility.LogRequest : 100.0%  et behavioral.chain_of_responsibility.FileLogger : 0.0% 
+
+ClassCouple.java : behavioral.chain_of_responsibility.LogRequest et behavioral.chain_of_responsibility.Logger se sont appelee l'une l'autre 1 fois. 
+behavioral.chain_of_responsibility.LogRequest : 100.0%  et behavioral.chain_of_responsibility.Logger : 0.0% 
+
+ClassCouple.java : creational.builder.Robot et creational.builder.OldRobotBuilder se sont appelee l'une l'autre 4 fois. 
+creational.builder.Robot : 100.0%  et creational.builder.OldRobotBuilder : 0.0% 
+
+ClassCouple.java : creational.builder.Robot et creational.builder.SophisticatedRobotBuilder se sont appelee l'une l'autre 4 fois. 
+creational.builder.Robot : 100.0%  et creational.builder.SophisticatedRobotBuilder : 0.0% 
+
+ClassCouple.java : structural.adapter.EnemyRobot et structural.adapter.EnemyRobotAdapter se sont appelee l'une l'autre 3 fois. 
+structural.adapter.EnemyRobot : 100.0%  et structural.adapter.EnemyRobotAdapter : 0.0% 
+
+ClassCouple.java : structural.adapter.EnemyRobot et structural.adapter.Test se sont appelee l'une l'autre 3 fois. 
+structural.adapter.EnemyRobot : 100.0%  et structural.adapter.Test : 0.0% 
+
+ClassCouple.java : structural.adapter.EnemyRobot et structural.adapter.TestEnemyAttackers se sont appelee l'une l'autre 3 fois. 
+structural.adapter.EnemyRobot : 100.0%  et structural.adapter.TestEnemyAttackers : 0.0% 
+
+ClassCouple.java : structural.bridge.Device et structural.bridge.AdvancedRemote se sont appelee l'une l'autre 3 fois. 
+structural.bridge.Device : 100.0%  et structural.bridge.AdvancedRemote : 0.0% 
+
+ClassCouple.java : structural.bridge.Device et structural.bridge.Remote se sont appelee l'une l'autre 17 fois. 
+structural.bridge.Device : 100.0%  et structural.bridge.Remote : 0.0% 
+
+ClassCouple.java : creational.prototype.Position et creational.prototype.Shape se sont appelee l'une l'autre 1 fois. 
+creational.prototype.Position : 100.0%  et creational.prototype.Shape : 0.0% 
+
+ClassCouple.java : creational.prototype.Position et creational.prototype.Test se sont appelee l'une l'autre 3 fois. 
+creational.prototype.Position : 100.0%  et creational.prototype.Test : 0.0% 
+
+ClassCouple.java : behavioral.command.CommandManager et behavioral.command.Test se sont appelee l'une l'autre 14 fois. 
+behavioral.command.CommandManager : 100.0%  et behavioral.command.Test : 0.0% 
+
+ClassCouple.java : behavioral.command.Test et creational.singleton.Singleton se sont appelee l'une l'autre 1 fois. 
+behavioral.command.Test : 0.0%  et creational.singleton.Singleton : 100.0% 
+
+ClassCouple.java : behavioral.iterator.DiscJockey et behavioral.iterator.Test se sont appelee l'une l'autre 3 fois. 
+behavioral.iterator.DiscJockey : 100.0%  et behavioral.iterator.Test : 0.0% 
+
+ClassCouple.java : behavioral.iterator.DiscJockey et structural.composite.SongComponent se sont appelee l'une l'autre 1 fois. 
+behavioral.iterator.DiscJockey : 0.0%  et structural.composite.SongComponent : 100.0% 
+
+ClassCouple.java : behavioral.memento.Originator et behavioral.memento.Test se sont appelee l'une l'autre 11 fois. 
+behavioral.memento.Originator : 100.0%  et behavioral.memento.Test : 0.0% 
+
+ClassCouple.java : behavioral.observer.StockGrabber et behavioral.observer.StockObserver se sont appelee l'une l'autre 4 fois. 
+behavioral.observer.StockGrabber : 100.0%  et behavioral.observer.StockObserver : 0.0% 
+
+ClassCouple.java : behavioral.observer.StockGrabber et behavioral.observer.Test se sont appelee l'une l'autre 10 fois. 
+behavioral.observer.StockGrabber : 100.0%  et behavioral.observer.Test : 0.0% 
+
+ClassCouple.java : behavioral.state.ATMMachine et behavioral.state.CorrectPin se sont appelee l'une l'autre 8 fois. 
+behavioral.state.ATMMachine : 100.0%  et behavioral.state.CorrectPin : 0.0% 
+
+ClassCouple.java : behavioral.state.ATMMachine et behavioral.state.HasCard se sont appelee l'une l'autre 4 fois. 
+behavioral.state.ATMMachine : 100.0%  et behavioral.state.HasCard : 0.0% 
+
+ClassCouple.java : behavioral.state.ATMMachine et behavioral.state.NoCard se sont appelee l'une l'autre 2 fois. 
+behavioral.state.ATMMachine : 100.0%  et behavioral.state.NoCard : 0.0% 
+
+ClassCouple.java : behavioral.state.ATMMachine et behavioral.state.Test se sont appelee l'une l'autre 11 fois. 
+behavioral.state.ATMMachine : 100.0%  et behavioral.state.Test : 0.0% 
+
+ClassCouple.java : behavioral.strategy.Calculator et behavioral.strategy.Test se sont appelee l'une l'autre 3 fois. 
+behavioral.strategy.Calculator : 100.0%  et behavioral.strategy.Test : 0.0% 
+
+ClassCouple.java : behavioral.template_method.Game et behavioral.template_method.Test se sont appelee l'une l'autre 2 fois. 
+behavioral.template_method.Game : 100.0%  et behavioral.template_method.Test : 0.0% 
+
+ClassCouple.java : behavioral.visitor.Product et behavioral.visitor.TaxVisitor se sont appelee l'une l'autre 1 fois. 
+behavioral.visitor.Product : 100.0%  et behavioral.visitor.TaxVisitor : 0.0% 
+
+ClassCouple.java : behavioral.visitor.TaxHolidayVisitor et behavioral.visitor.TaxVisitor se sont appelee l'une l'autre 2 fois. 
+behavioral.visitor.TaxHolidayVisitor : 0.0%  et behavioral.visitor.TaxVisitor : 100.0% 
+
+ClassCouple.java : behavioral.visitor.TaxVisitor et behavioral.visitor.Test se sont appelee l'une l'autre 1 fois. 
+behavioral.visitor.TaxVisitor : 100.0%  et behavioral.visitor.Test : 0.0% 
+
+ClassCouple.java : creational.abstract_factory.ShapeProducer et creational.abstract_factory.Test se sont appelee l'une l'autre 2 fois. 
+creational.abstract_factory.ShapeProducer : 100.0%  et creational.abstract_factory.Test : 0.0% 
+
+ClassCouple.java : creational.abstract_factory.ShapeProducer et creational.singleton.Singleton se sont appelee l'une l'autre 2 fois. 
+creational.abstract_factory.ShapeProducer : 0.0%  et creational.singleton.Singleton : 100.0% 
+
+ClassCouple.java : creational.builder.RobotEngineer et creational.builder.Test se sont appelee l'une l'autre 5 fois. 
+creational.builder.RobotEngineer : 100.0%  et creational.builder.Test : 0.0% 
+
+ClassCouple.java : creational.factory.EnemyShip et creational.factory.EnemyShipTesting se sont appelee l'une l'autre 3 fois. 
+creational.factory.EnemyShip : 100.0%  et creational.factory.EnemyShipTesting : 0.0% 
+
+ClassCouple.java : creational.factory.EnemyShip et creational.factory.Test se sont appelee l'une l'autre 3 fois. 
+creational.factory.EnemyShip : 100.0%  et creational.factory.Test : 0.0% 
+
+ClassCouple.java : creational.prototype.Shape et creational.prototype.ShapeCache se sont appelee l'une l'autre 10 fois. 
+creational.prototype.Shape : 100.0%  et creational.prototype.ShapeCache : 0.0% 
+
+ClassCouple.java : creational.prototype.Shape et creational.prototype.Test se sont appelee l'une l'autre 3 fois. 
+creational.prototype.Shape : 100.0%  et creational.prototype.Test : 0.0% 
+
+ClassCouple.java : creational.prototype.ShapeCache et creational.prototype.Test se sont appelee l'une l'autre 5 fois. 
+creational.prototype.ShapeCache : 100.0%  et creational.prototype.Test : 0.0% 
+
+ClassCouple.java : creational.singleton.Singleton et creational.singleton.Test se sont appelee l'une l'autre 4 fois. 
+creational.singleton.Singleton : 100.0%  et creational.singleton.Test : 0.0% 
+
+ClassCouple.java : structural.bridge.AdvancedRemote et structural.bridge.Test se sont appelee l'une l'autre 1 fois. 
+structural.bridge.AdvancedRemote : 100.0%  et structural.bridge.Test : 0.0% 
+
+ClassCouple.java : structural.bridge.Remote et structural.bridge.Test se sont appelee l'une l'autre 21 fois. 
+structural.bridge.Remote : 100.0%  et structural.bridge.Test : 0.0% 
+
+ClassCouple.java : structural.composite.DiscJockey et structural.composite.SongComponent se sont appelee l'une l'autre 1 fois. 
+structural.composite.DiscJockey : 0.0%  et structural.composite.SongComponent : 100.0% 
+
+ClassCouple.java : structural.composite.DiscJockey et structural.composite.SongListGenerator se sont appelee l'une l'autre 1 fois. 
+structural.composite.DiscJockey : 100.0%  et structural.composite.SongListGenerator : 0.0% 
+
+ClassCouple.java : structural.composite.DiscJockey et structural.composite.Test se sont appelee l'une l'autre 1 fois. 
+structural.composite.DiscJockey : 100.0%  et structural.composite.Test : 0.0% 
+
+ClassCouple.java : structural.composite.SongComponent et structural.composite.SongGroup se sont appelee l'une l'autre 2 fois. 
+structural.composite.SongComponent : 100.0%  et structural.composite.SongGroup : 0.0% 
+
+ClassCouple.java : structural.composite.SongComponent et structural.composite.SongListGenerator se sont appelee l'une l'autre 9 fois. 
+structural.composite.SongComponent : 100.0%  et structural.composite.SongListGenerator : 0.0% 
+
+ClassCouple.java : structural.composite.SongComponent et structural.composite.Test se sont appelee l'une l'autre 9 fois. 
+structural.composite.SongComponent : 100.0%  et structural.composite.Test : 0.0% 
+
+ClassCouple.java : structural.facade.BankAccountBalanceSystem et structural.facade.BankAccountFacade se sont appelee l'une l'autre 3 fois. 
+structural.facade.BankAccountBalanceSystem : 100.0%  et structural.facade.BankAccountFacade : 0.0% 
+
+ClassCouple.java : structural.facade.BankAccountFacade et structural.facade.BankAccountNumberChecker se sont appelee l'une l'autre 2 fois. 
+structural.facade.BankAccountFacade : 0.0%  et structural.facade.BankAccountNumberChecker : 100.0% 
+
+ClassCouple.java : structural.facade.BankAccountFacade et structural.facade.BankAccountSecurityCodeChecker se sont appelee l'une l'autre 2 fois. 
+structural.facade.BankAccountFacade : 0.0%  et structural.facade.BankAccountSecurityCodeChecker : 100.0% 
+
+ClassCouple.java : structural.facade.BankAccountFacade et structural.facade.Test se sont appelee l'une l'autre 3 fois. 
+structural.facade.BankAccountFacade : 100.0%  et structural.facade.Test : 0.0% 
+
+ProcessorClustering Conctructor: Au total il y a 269.0 invocations de classes 
+
+File /home/hayaat/Desktop/Master/M2/Git/design_patterns/processor_clustering.info:
+Number of classes = 128
+Couples => 
+ClassCouple.java : Classes : structural.flyweight.Circle AND structural.flyweight.Test 0.007434944237918215
+ClassCouple.java : Classes : structural.flyweight.ShapeFactory AND structural.flyweight.Test 0.0037174721189591076
+ClassCouple.java : Classes : creational.factory.EnemyShipFactory AND creational.factory.EnemyShipTesting 0.0037174721189591076
+ClassCouple.java : Classes : creational.factory.EnemyShipFactory AND creational.factory.Test 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.memento.CareTaker AND behavioral.memento.Test 0.01486988847583643
+ClassCouple.java : Classes : behavioral.mediator.User AND behavioral.mediator.ChatRoom 0.007434944237918215
+ClassCouple.java : Classes : behavioral.mediator.User AND behavioral.mediator.ChatUser 0.011152416356877323
+ClassCouple.java : Classes : behavioral.mediator.User AND behavioral.mediator.Test 0.01858736059479554
+ClassCouple.java : Classes : structural.facade.BankAccount AND structural.facade.BankAccountBalanceSystem 0.01486988847583643
+ClassCouple.java : Classes : structural.facade.BankAccount AND structural.facade.BankAccountNumberChecker 0.0037174721189591076
+ClassCouple.java : Classes : structural.facade.BankAccount AND structural.facade.BankAccountSecurityCodeChecker 0.0037174721189591076
+ClassCouple.java : Classes : structural.facade.BankAccount AND structural.facade.BankAccountWelcomeWindow 0.007434944237918215
+ClassCouple.java : Classes : creational.singleton.SingletonRegistry AND creational.singleton.Singleton 0.007434944237918215
+ClassCouple.java : Classes : structural.decorator.Beverage AND structural.decorator.CaramelDecorator 0.007434944237918215
+ClassCouple.java : Classes : structural.decorator.Beverage AND structural.decorator.SugarDecorator 0.007434944237918215
+ClassCouple.java : Classes : structural.decorator.Beverage AND structural.decorator.Test 0.007434944237918215
+ClassCouple.java : Classes : behavioral.command.TV AND behavioral.command.SwitchChannelCommand 0.01858736059479554
+ClassCouple.java : Classes : behavioral.command.TV AND behavioral.command.SwitchOffCommand 0.011152416356877323
+ClassCouple.java : Classes : behavioral.command.TV AND behavioral.command.SwitchOnCommand 0.011152416356877323
+ClassCouple.java : Classes : structural.adapter.EnemyTank AND structural.adapter.Test 0.011152416356877323
+ClassCouple.java : Classes : structural.adapter.EnemyTank AND structural.adapter.TestEnemyAttackers 0.011152416356877323
+ClassCouple.java : Classes : behavioral.memento.Memento AND behavioral.memento.Originator 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.chain_of_responsibility.LogRequest AND behavioral.chain_of_responsibility.ConsoleLogger 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.chain_of_responsibility.LogRequest AND behavioral.chain_of_responsibility.ErrorLogger 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.chain_of_responsibility.LogRequest AND behavioral.chain_of_responsibility.FileLogger 0.007434944237918215
+ClassCouple.java : Classes : behavioral.chain_of_responsibility.LogRequest AND behavioral.chain_of_responsibility.Logger 0.0037174721189591076
+ClassCouple.java : Classes : creational.builder.Robot AND creational.builder.OldRobotBuilder 0.01486988847583643
+ClassCouple.java : Classes : creational.builder.Robot AND creational.builder.SophisticatedRobotBuilder 0.01486988847583643
+ClassCouple.java : Classes : structural.adapter.EnemyRobot AND structural.adapter.EnemyRobotAdapter 0.011152416356877323
+ClassCouple.java : Classes : structural.adapter.EnemyRobot AND structural.adapter.Test 0.011152416356877323
+ClassCouple.java : Classes : structural.adapter.EnemyRobot AND structural.adapter.TestEnemyAttackers 0.011152416356877323
+ClassCouple.java : Classes : structural.bridge.Device AND structural.bridge.AdvancedRemote 0.011152416356877323
+ClassCouple.java : Classes : structural.bridge.Device AND structural.bridge.Remote 0.06319702602230483
+ClassCouple.java : Classes : creational.prototype.Position AND creational.prototype.Shape 0.0037174721189591076
+ClassCouple.java : Classes : creational.prototype.Position AND creational.prototype.Test 0.011152416356877323
+ClassCouple.java : Classes : behavioral.command.CommandManager AND behavioral.command.Test 0.05204460966542751
+ClassCouple.java : Classes : behavioral.command.Test AND creational.singleton.Singleton 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.iterator.DiscJockey AND behavioral.iterator.Test 0.011152416356877323
+ClassCouple.java : Classes : behavioral.iterator.DiscJockey AND structural.composite.SongComponent 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.memento.Originator AND behavioral.memento.Test 0.040892193308550186
+ClassCouple.java : Classes : behavioral.observer.StockGrabber AND behavioral.observer.StockObserver 0.01486988847583643
+ClassCouple.java : Classes : behavioral.observer.StockGrabber AND behavioral.observer.Test 0.03717472118959108
+ClassCouple.java : Classes : behavioral.state.ATMMachine AND behavioral.state.CorrectPin 0.02973977695167286
+ClassCouple.java : Classes : behavioral.state.ATMMachine AND behavioral.state.HasCard 0.01486988847583643
+ClassCouple.java : Classes : behavioral.state.ATMMachine AND behavioral.state.NoCard 0.007434944237918215
+ClassCouple.java : Classes : behavioral.state.ATMMachine AND behavioral.state.Test 0.040892193308550186
+ClassCouple.java : Classes : behavioral.strategy.Calculator AND behavioral.strategy.Test 0.011152416356877323
+ClassCouple.java : Classes : behavioral.template_method.Game AND behavioral.template_method.Test 0.007434944237918215
+ClassCouple.java : Classes : behavioral.visitor.Product AND behavioral.visitor.TaxVisitor 0.0037174721189591076
+ClassCouple.java : Classes : behavioral.visitor.TaxHolidayVisitor AND behavioral.visitor.TaxVisitor 0.007434944237918215
+ClassCouple.java : Classes : behavioral.visitor.TaxVisitor AND behavioral.visitor.Test 0.0037174721189591076
+ClassCouple.java : Classes : creational.abstract_factory.ShapeProducer AND creational.abstract_factory.Test 0.007434944237918215
+ClassCouple.java : Classes : creational.abstract_factory.ShapeProducer AND creational.singleton.Singleton 0.007434944237918215
+ClassCouple.java : Classes : creational.builder.RobotEngineer AND creational.builder.Test 0.01858736059479554
+ClassCouple.java : Classes : creational.factory.EnemyShip AND creational.factory.EnemyShipTesting 0.011152416356877323
+ClassCouple.java : Classes : creational.factory.EnemyShip AND creational.factory.Test 0.011152416356877323
+ClassCouple.java : Classes : creational.prototype.Shape AND creational.prototype.ShapeCache 0.03717472118959108
+ClassCouple.java : Classes : creational.prototype.Shape AND creational.prototype.Test 0.011152416356877323
+ClassCouple.java : Classes : creational.prototype.ShapeCache AND creational.prototype.Test 0.01858736059479554
+ClassCouple.java : Classes : creational.singleton.Singleton AND creational.singleton.Test 0.01486988847583643
+ClassCouple.java : Classes : structural.bridge.AdvancedRemote AND structural.bridge.Test 0.0037174721189591076
+ClassCouple.java : Classes : structural.bridge.Remote AND structural.bridge.Test 0.07806691449814127
+ClassCouple.java : Classes : structural.composite.DiscJockey AND structural.composite.SongComponent 0.0037174721189591076
+ClassCouple.java : Classes : structural.composite.DiscJockey AND structural.composite.SongListGenerator 0.0037174721189591076
+ClassCouple.java : Classes : structural.composite.DiscJockey AND structural.composite.Test 0.0037174721189591076
+ClassCouple.java : Classes : structural.composite.SongComponent AND structural.composite.SongGroup 0.007434944237918215
+ClassCouple.java : Classes : structural.composite.SongComponent AND structural.composite.SongListGenerator 0.03345724907063197
+ClassCouple.java : Classes : structural.composite.SongComponent AND structural.composite.Test 0.03345724907063197
+ClassCouple.java : Classes : structural.facade.BankAccountBalanceSystem AND structural.facade.BankAccountFacade 0.011152416356877323
+ClassCouple.java : Classes : structural.facade.BankAccountFacade AND structural.facade.BankAccountNumberChecker 0.007434944237918215
+ClassCouple.java : Classes : structural.facade.BankAccountFacade AND structural.facade.BankAccountSecurityCodeChecker 0.007434944237918215
+ClassCouple.java : Classes : structural.facade.BankAccountFacade AND structural.facade.Test 0.011152416356877323
+Clusters => 

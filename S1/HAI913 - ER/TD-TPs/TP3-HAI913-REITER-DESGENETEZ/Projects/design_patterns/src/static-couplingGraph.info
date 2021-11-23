@@ -1,0 +1,639 @@
+
+Number of classes : 131
+Total number of calls : 411
+Class calls :
+	Class : behavioral.chain_of_responsibility.ConsoleLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+	Class : behavioral.chain_of_responsibility.ErrorLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+	Class : behavioral.chain_of_responsibility.FileLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [2 time(s)]
+	Class : behavioral.chain_of_responsibility.Logger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.Logger [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.LogRequestLevel [2 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.ILogger [1 time(s)]
+	Class : behavioral.chain_of_responsibility.Test : 
+		 ---> Class : behavioral.chain_of_responsibility.Test [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.ILogger [5 time(s)]
+	Class : behavioral.command.CommandManager : 
+		 ---> Class : behavioral.command.Command [6 time(s)]
+	Class : behavioral.command.SwitchChannelCommand : 
+		 ---> Class : behavioral.command.TV [5 time(s)]
+	Class : behavioral.command.SwitchOffCommand : 
+		 ---> Class : behavioral.command.TV [3 time(s)]
+	Class : behavioral.command.SwitchOnCommand : 
+		 ---> Class : behavioral.command.TV [3 time(s)]
+	Class : behavioral.command.Test : 
+		 ---> Class : behavioral.command.CommandManager [14 time(s)]
+		 ---> Class : creational.singleton.Singleton [1 time(s)]
+	Class : behavioral.interpreter.AndExpression : 
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.interpreter.OrExpression : 
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.interpreter.Test : 
+		 ---> Class : behavioral.interpreter.Test [3 time(s)]
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.iterator.DiscJockey : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : behavioral.iterator.SongArray : 
+		 ---> Class : behavioral.iterator.SongArray [2 time(s)]
+	Class : behavioral.iterator.Test : 
+		 ---> Class : behavioral.iterator.SongAggregate [9 time(s)]
+		 ---> Class : behavioral.iterator.DiscJockey [3 time(s)]
+	Class : behavioral.mediator.ChatRoom : 
+		 ---> Class : behavioral.mediator.User [2 time(s)]
+	Class : behavioral.mediator.ChatUser : 
+		 ---> Class : behavioral.mediator.IChatRoom [1 time(s)]
+		 ---> Class : behavioral.mediator.User [3 time(s)]
+	Class : behavioral.mediator.Test : 
+		 ---> Class : behavioral.mediator.IChatRoom [4 time(s)]
+		 ---> Class : behavioral.mediator.User [5 time(s)]
+	Class : behavioral.memento.Originator : 
+		 ---> Class : behavioral.memento.Memento [1 time(s)]
+		 ---> Class : behavioral.memento.Originator [1 time(s)]
+	Class : behavioral.memento.Test : 
+		 ---> Class : behavioral.memento.CareTaker [4 time(s)]
+		 ---> Class : behavioral.memento.Originator [11 time(s)]
+	Class : behavioral.observer.StockGrabber : 
+		 ---> Class : behavioral.observer.Observer [1 time(s)]
+		 ---> Class : behavioral.observer.StockGrabber [3 time(s)]
+	Class : behavioral.observer.StockObserver : 
+		 ---> Class : behavioral.observer.StockObserver [1 time(s)]
+		 ---> Class : behavioral.observer.StockGrabber [4 time(s)]
+	Class : behavioral.observer.Test : 
+		 ---> Class : behavioral.observer.StockGrabber [10 time(s)]
+	Class : behavioral.state.ATMMachine : 
+		 ---> Class : behavioral.state.IATMState [4 time(s)]
+	Class : behavioral.state.CorrectPin : 
+		 ---> Class : behavioral.state.ATMMachine [8 time(s)]
+		 ---> Class : behavioral.state.CorrectPin [1 time(s)]
+	Class : behavioral.state.HasCard : 
+		 ---> Class : behavioral.state.HasCard [1 time(s)]
+		 ---> Class : behavioral.state.ATMMachine [4 time(s)]
+	Class : behavioral.state.NoCard : 
+		 ---> Class : behavioral.state.NoCard [3 time(s)]
+		 ---> Class : behavioral.state.ATMMachine [2 time(s)]
+	Class : behavioral.state.NoCash : 
+		 ---> Class : behavioral.state.NoCash [4 time(s)]
+	Class : behavioral.state.Test : 
+		 ---> Class : behavioral.state.ATMMachine [11 time(s)]
+	Class : behavioral.strategy.Calculator : 
+		 ---> Class : behavioral.strategy.ArithmeticOperation [1 time(s)]
+	Class : behavioral.strategy.Test : 
+		 ---> Class : behavioral.strategy.Calculator [3 time(s)]
+		 ---> Class : behavioral.strategy.Test [5 time(s)]
+	Class : behavioral.template_method.Game : 
+		 ---> Class : behavioral.template_method.Game [3 time(s)]
+	Class : behavioral.template_method.Test : 
+		 ---> Class : behavioral.template_method.Game [2 time(s)]
+	Class : behavioral.visitor.Liquor : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : behavioral.visitor.Necessity : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : behavioral.visitor.Product : 
+		 ---> Class : behavioral.visitor.Product [2 time(s)]
+	Class : behavioral.visitor.TaxHolidayVisitor : 
+		 ---> Class : behavioral.visitor.TaxVisitor [2 time(s)]
+	Class : behavioral.visitor.TaxVisitor : 
+		 ---> Class : behavioral.visitor.TaxVisitor [3 time(s)]
+		 ---> Class : behavioral.visitor.Product [1 time(s)]
+	Class : behavioral.visitor.Test : 
+		 ---> Class : behavioral.visitor.TaxVisitor [1 time(s)]
+		 ---> Class : behavioral.visitor.Test [2 time(s)]
+		 ---> Class : behavioral.visitor.Visitable [1 time(s)]
+	Class : behavioral.visitor.Tobacco : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : creational.abstract_factory.ShapeProducer : 
+		 ---> Class : creational.singleton.Singleton [2 time(s)]
+	Class : creational.abstract_factory.Test : 
+		 ---> Class : creational.abstract_factory.AbstractShapeFactory [4 time(s)]
+		 ---> Class : creational.abstract_factory.Shape [4 time(s)]
+		 ---> Class : creational.abstract_factory.ShapeProducer [2 time(s)]
+	Class : creational.builder.OldRobotBuilder : 
+		 ---> Class : creational.builder.Robot [4 time(s)]
+	Class : creational.builder.RobotEngineer : 
+		 ---> Class : creational.builder.RobotEngineer [1 time(s)]
+		 ---> Class : creational.builder.IRobotBuilder [5 time(s)]
+	Class : creational.builder.SophisticatedRobotBuilder : 
+		 ---> Class : creational.builder.Robot [4 time(s)]
+	Class : creational.builder.Test : 
+		 ---> Class : creational.builder.RobotEngineer [5 time(s)]
+	Class : creational.factory.EnemyShip : 
+		 ---> Class : creational.factory.EnemyShip [2 time(s)]
+	Class : creational.factory.EnemyShipTesting : 
+		 ---> Class : creational.factory.EnemyShipTesting [1 time(s)]
+		 ---> Class : creational.factory.EnemyShipFactory [1 time(s)]
+		 ---> Class : creational.factory.EnemyShip [3 time(s)]
+	Class : creational.factory.Test : 
+		 ---> Class : creational.factory.EnemyShipFactory [1 time(s)]
+		 ---> Class : creational.factory.Test [1 time(s)]
+		 ---> Class : creational.factory.EnemyShip [3 time(s)]
+	Class : creational.prototype.Shape : 
+		 ---> Class : creational.prototype.Position [1 time(s)]
+		 ---> Class : creational.prototype.Shape [2 time(s)]
+	Class : creational.prototype.ShapeCache : 
+		 ---> Class : creational.prototype.Shape [10 time(s)]
+	Class : creational.prototype.Test : 
+		 ---> Class : creational.prototype.Position [3 time(s)]
+		 ---> Class : creational.prototype.Shape [3 time(s)]
+		 ---> Class : creational.prototype.ShapeCache [5 time(s)]
+	Class : creational.singleton.Singleton : 
+		 ---> Class : creational.singleton.Singleton [2 time(s)]
+		 ---> Class : creational.singleton.SingletonRegistry [2 time(s)]
+	Class : creational.singleton.Test : 
+		 ---> Class : creational.singleton.Singleton [4 time(s)]
+	Class : structural.adapter.EnemyRobotAdapter : 
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobotAdapter [1 time(s)]
+	Class : structural.adapter.Test : 
+		 ---> Class : structural.adapter.EnemyTank [3 time(s)]
+		 ---> Class : structural.adapter.EnemyAttacker [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+	Class : structural.adapter.TestEnemyAttackers : 
+		 ---> Class : structural.adapter.EnemyTank [3 time(s)]
+		 ---> Class : structural.adapter.EnemyAttacker [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+	Class : structural.bridge.AdvancedRemote : 
+		 ---> Class : structural.bridge.Device [3 time(s)]
+	Class : structural.bridge.Remote : 
+		 ---> Class : structural.bridge.Device [17 time(s)]
+	Class : structural.bridge.Test : 
+		 ---> Class : structural.bridge.Test [4 time(s)]
+		 ---> Class : structural.bridge.Remote [21 time(s)]
+		 ---> Class : structural.bridge.AdvancedRemote [1 time(s)]
+	Class : structural.composite.DiscJockey : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : structural.composite.Song : 
+		 ---> Class : structural.composite.Song [3 time(s)]
+	Class : structural.composite.SongComponent : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : structural.composite.SongGroup : 
+		 ---> Class : structural.composite.SongGroup [2 time(s)]
+		 ---> Class : structural.composite.SongComponent [2 time(s)]
+	Class : structural.composite.SongListGenerator : 
+		 ---> Class : structural.composite.SongComponent [9 time(s)]
+		 ---> Class : structural.composite.DiscJockey [1 time(s)]
+	Class : structural.composite.Test : 
+		 ---> Class : structural.composite.SongComponent [9 time(s)]
+		 ---> Class : structural.composite.DiscJockey [1 time(s)]
+	Class : structural.decorator.CaramelDecorator : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+	Class : structural.decorator.SugarDecorator : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+	Class : structural.decorator.Test : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+		 ---> Class : structural.decorator.Test [6 time(s)]
+	Class : structural.facade.BankAccountBalanceSystem : 
+		 ---> Class : structural.facade.BankAccount [4 time(s)]
+		 ---> Class : structural.facade.BankAccountBalanceSystem [6 time(s)]
+	Class : structural.facade.BankAccountFacade : 
+		 ---> Class : structural.facade.BankAccountSecurityCodeChecker [2 time(s)]
+		 ---> Class : structural.facade.BankAccountBalanceSystem [3 time(s)]
+		 ---> Class : structural.facade.BankAccountFacade [1 time(s)]
+		 ---> Class : structural.facade.BankAccountNumberChecker [2 time(s)]
+	Class : structural.facade.BankAccountNumberChecker : 
+		 ---> Class : structural.facade.BankAccount [1 time(s)]
+		 ---> Class : structural.facade.BankAccountNumberChecker [1 time(s)]
+	Class : structural.facade.BankAccountSecurityCodeChecker : 
+		 ---> Class : structural.facade.BankAccount [1 time(s)]
+		 ---> Class : structural.facade.BankAccountSecurityCodeChecker [1 time(s)]
+	Class : structural.facade.BankAccountWelcomeWindow : 
+		 ---> Class : structural.facade.BankAccountWelcomeWindow [1 time(s)]
+		 ---> Class : structural.facade.BankAccount [2 time(s)]
+	Class : structural.facade.Test : 
+		 ---> Class : structural.facade.BankAccountFacade [3 time(s)]
+	Class : structural.flyweight.Test : 
+		 ---> Class : structural.flyweight.Circle [2 time(s)]
+		 ---> Class : structural.flyweight.Test [4 time(s)]
+		 ---> Class : structural.flyweight.ShapeFactory [1 time(s)]
+	Class : structural.proxy.ProxyInternet : 
+		 ---> Class : structural.proxy.Internet [1 time(s)]
+	Class : structural.proxy.Test : 
+		 ---> Class : structural.proxy.Internet [2 time(s)]
+
+Number of classes : 131
+Total number of calls : 411
+Class calls :
+	Class : behavioral.chain_of_responsibility.ConsoleLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+	Class : behavioral.chain_of_responsibility.ErrorLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+	Class : behavioral.chain_of_responsibility.FileLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [2 time(s)]
+	Class : behavioral.chain_of_responsibility.Logger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.Logger [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.LogRequestLevel [2 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.ILogger [1 time(s)]
+	Class : behavioral.chain_of_responsibility.Test : 
+		 ---> Class : behavioral.chain_of_responsibility.Test [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.ILogger [5 time(s)]
+	Class : behavioral.command.CommandManager : 
+		 ---> Class : behavioral.command.Command [6 time(s)]
+	Class : behavioral.command.SwitchChannelCommand : 
+		 ---> Class : behavioral.command.TV [5 time(s)]
+	Class : behavioral.command.SwitchOffCommand : 
+		 ---> Class : behavioral.command.TV [3 time(s)]
+	Class : behavioral.command.SwitchOnCommand : 
+		 ---> Class : behavioral.command.TV [3 time(s)]
+	Class : behavioral.command.Test : 
+		 ---> Class : behavioral.command.CommandManager [14 time(s)]
+		 ---> Class : creational.singleton.Singleton [1 time(s)]
+	Class : behavioral.interpreter.AndExpression : 
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.interpreter.OrExpression : 
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.interpreter.Test : 
+		 ---> Class : behavioral.interpreter.Test [3 time(s)]
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.iterator.DiscJockey : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : behavioral.iterator.SongArray : 
+		 ---> Class : behavioral.iterator.SongArray [2 time(s)]
+	Class : behavioral.iterator.Test : 
+		 ---> Class : behavioral.iterator.SongAggregate [9 time(s)]
+		 ---> Class : behavioral.iterator.DiscJockey [3 time(s)]
+	Class : behavioral.mediator.ChatRoom : 
+		 ---> Class : behavioral.mediator.User [2 time(s)]
+	Class : behavioral.mediator.ChatUser : 
+		 ---> Class : behavioral.mediator.IChatRoom [1 time(s)]
+		 ---> Class : behavioral.mediator.User [3 time(s)]
+	Class : behavioral.mediator.Test : 
+		 ---> Class : behavioral.mediator.IChatRoom [4 time(s)]
+		 ---> Class : behavioral.mediator.User [5 time(s)]
+	Class : behavioral.memento.Originator : 
+		 ---> Class : behavioral.memento.Memento [1 time(s)]
+		 ---> Class : behavioral.memento.Originator [1 time(s)]
+	Class : behavioral.memento.Test : 
+		 ---> Class : behavioral.memento.CareTaker [4 time(s)]
+		 ---> Class : behavioral.memento.Originator [11 time(s)]
+	Class : behavioral.observer.StockGrabber : 
+		 ---> Class : behavioral.observer.Observer [1 time(s)]
+		 ---> Class : behavioral.observer.StockGrabber [3 time(s)]
+	Class : behavioral.observer.StockObserver : 
+		 ---> Class : behavioral.observer.StockObserver [1 time(s)]
+		 ---> Class : behavioral.observer.StockGrabber [4 time(s)]
+	Class : behavioral.observer.Test : 
+		 ---> Class : behavioral.observer.StockGrabber [10 time(s)]
+	Class : behavioral.state.ATMMachine : 
+		 ---> Class : behavioral.state.IATMState [4 time(s)]
+	Class : behavioral.state.CorrectPin : 
+		 ---> Class : behavioral.state.ATMMachine [8 time(s)]
+		 ---> Class : behavioral.state.CorrectPin [1 time(s)]
+	Class : behavioral.state.HasCard : 
+		 ---> Class : behavioral.state.HasCard [1 time(s)]
+		 ---> Class : behavioral.state.ATMMachine [4 time(s)]
+	Class : behavioral.state.NoCard : 
+		 ---> Class : behavioral.state.NoCard [3 time(s)]
+		 ---> Class : behavioral.state.ATMMachine [2 time(s)]
+	Class : behavioral.state.NoCash : 
+		 ---> Class : behavioral.state.NoCash [4 time(s)]
+	Class : behavioral.state.Test : 
+		 ---> Class : behavioral.state.ATMMachine [11 time(s)]
+	Class : behavioral.strategy.Calculator : 
+		 ---> Class : behavioral.strategy.ArithmeticOperation [1 time(s)]
+	Class : behavioral.strategy.Test : 
+		 ---> Class : behavioral.strategy.Calculator [3 time(s)]
+		 ---> Class : behavioral.strategy.Test [5 time(s)]
+	Class : behavioral.template_method.Game : 
+		 ---> Class : behavioral.template_method.Game [3 time(s)]
+	Class : behavioral.template_method.Test : 
+		 ---> Class : behavioral.template_method.Game [2 time(s)]
+	Class : behavioral.visitor.Liquor : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : behavioral.visitor.Necessity : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : behavioral.visitor.Product : 
+		 ---> Class : behavioral.visitor.Product [2 time(s)]
+	Class : behavioral.visitor.TaxHolidayVisitor : 
+		 ---> Class : behavioral.visitor.TaxVisitor [2 time(s)]
+	Class : behavioral.visitor.TaxVisitor : 
+		 ---> Class : behavioral.visitor.TaxVisitor [3 time(s)]
+		 ---> Class : behavioral.visitor.Product [1 time(s)]
+	Class : behavioral.visitor.Test : 
+		 ---> Class : behavioral.visitor.TaxVisitor [1 time(s)]
+		 ---> Class : behavioral.visitor.Test [2 time(s)]
+		 ---> Class : behavioral.visitor.Visitable [1 time(s)]
+	Class : behavioral.visitor.Tobacco : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : creational.abstract_factory.ShapeProducer : 
+		 ---> Class : creational.singleton.Singleton [2 time(s)]
+	Class : creational.abstract_factory.Test : 
+		 ---> Class : creational.abstract_factory.AbstractShapeFactory [4 time(s)]
+		 ---> Class : creational.abstract_factory.Shape [4 time(s)]
+		 ---> Class : creational.abstract_factory.ShapeProducer [2 time(s)]
+	Class : creational.builder.OldRobotBuilder : 
+		 ---> Class : creational.builder.Robot [4 time(s)]
+	Class : creational.builder.RobotEngineer : 
+		 ---> Class : creational.builder.RobotEngineer [1 time(s)]
+		 ---> Class : creational.builder.IRobotBuilder [5 time(s)]
+	Class : creational.builder.SophisticatedRobotBuilder : 
+		 ---> Class : creational.builder.Robot [4 time(s)]
+	Class : creational.builder.Test : 
+		 ---> Class : creational.builder.RobotEngineer [5 time(s)]
+	Class : creational.factory.EnemyShip : 
+		 ---> Class : creational.factory.EnemyShip [2 time(s)]
+	Class : creational.factory.EnemyShipTesting : 
+		 ---> Class : creational.factory.EnemyShipTesting [1 time(s)]
+		 ---> Class : creational.factory.EnemyShipFactory [1 time(s)]
+		 ---> Class : creational.factory.EnemyShip [3 time(s)]
+	Class : creational.factory.Test : 
+		 ---> Class : creational.factory.EnemyShipFactory [1 time(s)]
+		 ---> Class : creational.factory.Test [1 time(s)]
+		 ---> Class : creational.factory.EnemyShip [3 time(s)]
+	Class : creational.prototype.Shape : 
+		 ---> Class : creational.prototype.Position [1 time(s)]
+		 ---> Class : creational.prototype.Shape [2 time(s)]
+	Class : creational.prototype.ShapeCache : 
+		 ---> Class : creational.prototype.Shape [10 time(s)]
+	Class : creational.prototype.Test : 
+		 ---> Class : creational.prototype.Position [3 time(s)]
+		 ---> Class : creational.prototype.Shape [3 time(s)]
+		 ---> Class : creational.prototype.ShapeCache [5 time(s)]
+	Class : creational.singleton.Singleton : 
+		 ---> Class : creational.singleton.Singleton [2 time(s)]
+		 ---> Class : creational.singleton.SingletonRegistry [2 time(s)]
+	Class : creational.singleton.Test : 
+		 ---> Class : creational.singleton.Singleton [4 time(s)]
+	Class : structural.adapter.EnemyRobotAdapter : 
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobotAdapter [1 time(s)]
+	Class : structural.adapter.Test : 
+		 ---> Class : structural.adapter.EnemyTank [3 time(s)]
+		 ---> Class : structural.adapter.EnemyAttacker [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+	Class : structural.adapter.TestEnemyAttackers : 
+		 ---> Class : structural.adapter.EnemyTank [3 time(s)]
+		 ---> Class : structural.adapter.EnemyAttacker [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+	Class : structural.bridge.AdvancedRemote : 
+		 ---> Class : structural.bridge.Device [3 time(s)]
+	Class : structural.bridge.Remote : 
+		 ---> Class : structural.bridge.Device [17 time(s)]
+	Class : structural.bridge.Test : 
+		 ---> Class : structural.bridge.Test [4 time(s)]
+		 ---> Class : structural.bridge.Remote [21 time(s)]
+		 ---> Class : structural.bridge.AdvancedRemote [1 time(s)]
+	Class : structural.composite.DiscJockey : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : structural.composite.Song : 
+		 ---> Class : structural.composite.Song [3 time(s)]
+	Class : structural.composite.SongComponent : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : structural.composite.SongGroup : 
+		 ---> Class : structural.composite.SongGroup [2 time(s)]
+		 ---> Class : structural.composite.SongComponent [2 time(s)]
+	Class : structural.composite.SongListGenerator : 
+		 ---> Class : structural.composite.SongComponent [9 time(s)]
+		 ---> Class : structural.composite.DiscJockey [1 time(s)]
+	Class : structural.composite.Test : 
+		 ---> Class : structural.composite.SongComponent [9 time(s)]
+		 ---> Class : structural.composite.DiscJockey [1 time(s)]
+	Class : structural.decorator.CaramelDecorator : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+	Class : structural.decorator.SugarDecorator : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+	Class : structural.decorator.Test : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+		 ---> Class : structural.decorator.Test [6 time(s)]
+	Class : structural.facade.BankAccountBalanceSystem : 
+		 ---> Class : structural.facade.BankAccount [4 time(s)]
+		 ---> Class : structural.facade.BankAccountBalanceSystem [6 time(s)]
+	Class : structural.facade.BankAccountFacade : 
+		 ---> Class : structural.facade.BankAccountSecurityCodeChecker [2 time(s)]
+		 ---> Class : structural.facade.BankAccountBalanceSystem [3 time(s)]
+		 ---> Class : structural.facade.BankAccountFacade [1 time(s)]
+		 ---> Class : structural.facade.BankAccountNumberChecker [2 time(s)]
+	Class : structural.facade.BankAccountNumberChecker : 
+		 ---> Class : structural.facade.BankAccount [1 time(s)]
+		 ---> Class : structural.facade.BankAccountNumberChecker [1 time(s)]
+	Class : structural.facade.BankAccountSecurityCodeChecker : 
+		 ---> Class : structural.facade.BankAccount [1 time(s)]
+		 ---> Class : structural.facade.BankAccountSecurityCodeChecker [1 time(s)]
+	Class : structural.facade.BankAccountWelcomeWindow : 
+		 ---> Class : structural.facade.BankAccountWelcomeWindow [1 time(s)]
+		 ---> Class : structural.facade.BankAccount [2 time(s)]
+	Class : structural.facade.Test : 
+		 ---> Class : structural.facade.BankAccountFacade [3 time(s)]
+	Class : structural.flyweight.Test : 
+		 ---> Class : structural.flyweight.Circle [2 time(s)]
+		 ---> Class : structural.flyweight.Test [4 time(s)]
+		 ---> Class : structural.flyweight.ShapeFactory [1 time(s)]
+	Class : structural.proxy.ProxyInternet : 
+		 ---> Class : structural.proxy.Internet [1 time(s)]
+	Class : structural.proxy.Test : 
+		 ---> Class : structural.proxy.Internet [2 time(s)]
+
+Number of classes : 131
+Total number of calls : 411
+Class calls :
+	Class : behavioral.chain_of_responsibility.ConsoleLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+	Class : behavioral.chain_of_responsibility.ErrorLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+	Class : behavioral.chain_of_responsibility.FileLogger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [2 time(s)]
+	Class : behavioral.chain_of_responsibility.Logger : 
+		 ---> Class : behavioral.chain_of_responsibility.LogRequest [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.Logger [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.LogRequestLevel [2 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.ILogger [1 time(s)]
+	Class : behavioral.chain_of_responsibility.Test : 
+		 ---> Class : behavioral.chain_of_responsibility.Test [1 time(s)]
+		 ---> Class : behavioral.chain_of_responsibility.ILogger [5 time(s)]
+	Class : behavioral.command.CommandManager : 
+		 ---> Class : behavioral.command.Command [6 time(s)]
+	Class : behavioral.command.SwitchChannelCommand : 
+		 ---> Class : behavioral.command.TV [5 time(s)]
+	Class : behavioral.command.SwitchOffCommand : 
+		 ---> Class : behavioral.command.TV [3 time(s)]
+	Class : behavioral.command.SwitchOnCommand : 
+		 ---> Class : behavioral.command.TV [3 time(s)]
+	Class : behavioral.command.Test : 
+		 ---> Class : behavioral.command.CommandManager [14 time(s)]
+		 ---> Class : creational.singleton.Singleton [1 time(s)]
+	Class : behavioral.interpreter.AndExpression : 
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.interpreter.OrExpression : 
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.interpreter.Test : 
+		 ---> Class : behavioral.interpreter.Test [3 time(s)]
+		 ---> Class : behavioral.interpreter.Expression [2 time(s)]
+	Class : behavioral.iterator.DiscJockey : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : behavioral.iterator.SongArray : 
+		 ---> Class : behavioral.iterator.SongArray [2 time(s)]
+	Class : behavioral.iterator.Test : 
+		 ---> Class : behavioral.iterator.SongAggregate [9 time(s)]
+		 ---> Class : behavioral.iterator.DiscJockey [3 time(s)]
+	Class : behavioral.mediator.ChatRoom : 
+		 ---> Class : behavioral.mediator.User [2 time(s)]
+	Class : behavioral.mediator.ChatUser : 
+		 ---> Class : behavioral.mediator.IChatRoom [1 time(s)]
+		 ---> Class : behavioral.mediator.User [3 time(s)]
+	Class : behavioral.mediator.Test : 
+		 ---> Class : behavioral.mediator.IChatRoom [4 time(s)]
+		 ---> Class : behavioral.mediator.User [5 time(s)]
+	Class : behavioral.memento.Originator : 
+		 ---> Class : behavioral.memento.Memento [1 time(s)]
+		 ---> Class : behavioral.memento.Originator [1 time(s)]
+	Class : behavioral.memento.Test : 
+		 ---> Class : behavioral.memento.CareTaker [4 time(s)]
+		 ---> Class : behavioral.memento.Originator [11 time(s)]
+	Class : behavioral.observer.StockGrabber : 
+		 ---> Class : behavioral.observer.Observer [1 time(s)]
+		 ---> Class : behavioral.observer.StockGrabber [3 time(s)]
+	Class : behavioral.observer.StockObserver : 
+		 ---> Class : behavioral.observer.StockObserver [1 time(s)]
+		 ---> Class : behavioral.observer.StockGrabber [4 time(s)]
+	Class : behavioral.observer.Test : 
+		 ---> Class : behavioral.observer.StockGrabber [10 time(s)]
+	Class : behavioral.state.ATMMachine : 
+		 ---> Class : behavioral.state.IATMState [4 time(s)]
+	Class : behavioral.state.CorrectPin : 
+		 ---> Class : behavioral.state.ATMMachine [8 time(s)]
+		 ---> Class : behavioral.state.CorrectPin [1 time(s)]
+	Class : behavioral.state.HasCard : 
+		 ---> Class : behavioral.state.HasCard [1 time(s)]
+		 ---> Class : behavioral.state.ATMMachine [4 time(s)]
+	Class : behavioral.state.NoCard : 
+		 ---> Class : behavioral.state.NoCard [3 time(s)]
+		 ---> Class : behavioral.state.ATMMachine [2 time(s)]
+	Class : behavioral.state.NoCash : 
+		 ---> Class : behavioral.state.NoCash [4 time(s)]
+	Class : behavioral.state.Test : 
+		 ---> Class : behavioral.state.ATMMachine [11 time(s)]
+	Class : behavioral.strategy.Calculator : 
+		 ---> Class : behavioral.strategy.ArithmeticOperation [1 time(s)]
+	Class : behavioral.strategy.Test : 
+		 ---> Class : behavioral.strategy.Calculator [3 time(s)]
+		 ---> Class : behavioral.strategy.Test [5 time(s)]
+	Class : behavioral.template_method.Game : 
+		 ---> Class : behavioral.template_method.Game [3 time(s)]
+	Class : behavioral.template_method.Test : 
+		 ---> Class : behavioral.template_method.Game [2 time(s)]
+	Class : behavioral.visitor.Liquor : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : behavioral.visitor.Necessity : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : behavioral.visitor.Product : 
+		 ---> Class : behavioral.visitor.Product [2 time(s)]
+	Class : behavioral.visitor.TaxHolidayVisitor : 
+		 ---> Class : behavioral.visitor.TaxVisitor [2 time(s)]
+	Class : behavioral.visitor.TaxVisitor : 
+		 ---> Class : behavioral.visitor.TaxVisitor [3 time(s)]
+		 ---> Class : behavioral.visitor.Product [1 time(s)]
+	Class : behavioral.visitor.Test : 
+		 ---> Class : behavioral.visitor.TaxVisitor [1 time(s)]
+		 ---> Class : behavioral.visitor.Test [2 time(s)]
+		 ---> Class : behavioral.visitor.Visitable [1 time(s)]
+	Class : behavioral.visitor.Tobacco : 
+		 ---> Class : behavioral.visitor.Visitor [1 time(s)]
+	Class : creational.abstract_factory.ShapeProducer : 
+		 ---> Class : creational.singleton.Singleton [2 time(s)]
+	Class : creational.abstract_factory.Test : 
+		 ---> Class : creational.abstract_factory.AbstractShapeFactory [4 time(s)]
+		 ---> Class : creational.abstract_factory.Shape [4 time(s)]
+		 ---> Class : creational.abstract_factory.ShapeProducer [2 time(s)]
+	Class : creational.builder.OldRobotBuilder : 
+		 ---> Class : creational.builder.Robot [4 time(s)]
+	Class : creational.builder.RobotEngineer : 
+		 ---> Class : creational.builder.RobotEngineer [1 time(s)]
+		 ---> Class : creational.builder.IRobotBuilder [5 time(s)]
+	Class : creational.builder.SophisticatedRobotBuilder : 
+		 ---> Class : creational.builder.Robot [4 time(s)]
+	Class : creational.builder.Test : 
+		 ---> Class : creational.builder.RobotEngineer [5 time(s)]
+	Class : creational.factory.EnemyShip : 
+		 ---> Class : creational.factory.EnemyShip [2 time(s)]
+	Class : creational.factory.EnemyShipTesting : 
+		 ---> Class : creational.factory.EnemyShipTesting [1 time(s)]
+		 ---> Class : creational.factory.EnemyShipFactory [1 time(s)]
+		 ---> Class : creational.factory.EnemyShip [3 time(s)]
+	Class : creational.factory.Test : 
+		 ---> Class : creational.factory.EnemyShipFactory [1 time(s)]
+		 ---> Class : creational.factory.Test [1 time(s)]
+		 ---> Class : creational.factory.EnemyShip [3 time(s)]
+	Class : creational.prototype.Shape : 
+		 ---> Class : creational.prototype.Position [1 time(s)]
+		 ---> Class : creational.prototype.Shape [2 time(s)]
+	Class : creational.prototype.ShapeCache : 
+		 ---> Class : creational.prototype.Shape [10 time(s)]
+	Class : creational.prototype.Test : 
+		 ---> Class : creational.prototype.Position [3 time(s)]
+		 ---> Class : creational.prototype.Shape [3 time(s)]
+		 ---> Class : creational.prototype.ShapeCache [5 time(s)]
+	Class : creational.singleton.Singleton : 
+		 ---> Class : creational.singleton.Singleton [2 time(s)]
+		 ---> Class : creational.singleton.SingletonRegistry [2 time(s)]
+	Class : creational.singleton.Test : 
+		 ---> Class : creational.singleton.Singleton [4 time(s)]
+	Class : structural.adapter.EnemyRobotAdapter : 
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobotAdapter [1 time(s)]
+	Class : structural.adapter.Test : 
+		 ---> Class : structural.adapter.EnemyTank [3 time(s)]
+		 ---> Class : structural.adapter.EnemyAttacker [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+	Class : structural.adapter.TestEnemyAttackers : 
+		 ---> Class : structural.adapter.EnemyTank [3 time(s)]
+		 ---> Class : structural.adapter.EnemyAttacker [3 time(s)]
+		 ---> Class : structural.adapter.EnemyRobot [3 time(s)]
+	Class : structural.bridge.AdvancedRemote : 
+		 ---> Class : structural.bridge.Device [3 time(s)]
+	Class : structural.bridge.Remote : 
+		 ---> Class : structural.bridge.Device [17 time(s)]
+	Class : structural.bridge.Test : 
+		 ---> Class : structural.bridge.Test [4 time(s)]
+		 ---> Class : structural.bridge.Remote [21 time(s)]
+		 ---> Class : structural.bridge.AdvancedRemote [1 time(s)]
+	Class : structural.composite.DiscJockey : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : structural.composite.Song : 
+		 ---> Class : structural.composite.Song [3 time(s)]
+	Class : structural.composite.SongComponent : 
+		 ---> Class : structural.composite.SongComponent [1 time(s)]
+	Class : structural.composite.SongGroup : 
+		 ---> Class : structural.composite.SongGroup [2 time(s)]
+		 ---> Class : structural.composite.SongComponent [2 time(s)]
+	Class : structural.composite.SongListGenerator : 
+		 ---> Class : structural.composite.SongComponent [9 time(s)]
+		 ---> Class : structural.composite.DiscJockey [1 time(s)]
+	Class : structural.composite.Test : 
+		 ---> Class : structural.composite.SongComponent [9 time(s)]
+		 ---> Class : structural.composite.DiscJockey [1 time(s)]
+	Class : structural.decorator.CaramelDecorator : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+	Class : structural.decorator.SugarDecorator : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+	Class : structural.decorator.Test : 
+		 ---> Class : structural.decorator.Beverage [2 time(s)]
+		 ---> Class : structural.decorator.Test [6 time(s)]
+	Class : structural.facade.BankAccountBalanceSystem : 
+		 ---> Class : structural.facade.BankAccount [4 time(s)]
+		 ---> Class : structural.facade.BankAccountBalanceSystem [6 time(s)]
+	Class : structural.facade.BankAccountFacade : 
+		 ---> Class : structural.facade.BankAccountSecurityCodeChecker [2 time(s)]
+		 ---> Class : structural.facade.BankAccountBalanceSystem [3 time(s)]
+		 ---> Class : structural.facade.BankAccountFacade [1 time(s)]
+		 ---> Class : structural.facade.BankAccountNumberChecker [2 time(s)]
+	Class : structural.facade.BankAccountNumberChecker : 
+		 ---> Class : structural.facade.BankAccount [1 time(s)]
+		 ---> Class : structural.facade.BankAccountNumberChecker [1 time(s)]
+	Class : structural.facade.BankAccountSecurityCodeChecker : 
+		 ---> Class : structural.facade.BankAccount [1 time(s)]
+		 ---> Class : structural.facade.BankAccountSecurityCodeChecker [1 time(s)]
+	Class : structural.facade.BankAccountWelcomeWindow : 
+		 ---> Class : structural.facade.BankAccountWelcomeWindow [1 time(s)]
+		 ---> Class : structural.facade.BankAccount [2 time(s)]
+	Class : structural.facade.Test : 
+		 ---> Class : structural.facade.BankAccountFacade [3 time(s)]
+	Class : structural.flyweight.Test : 
+		 ---> Class : structural.flyweight.Circle [2 time(s)]
+		 ---> Class : structural.flyweight.Test [4 time(s)]
+		 ---> Class : structural.flyweight.ShapeFactory [1 time(s)]
+	Class : structural.proxy.ProxyInternet : 
+		 ---> Class : structural.proxy.Internet [1 time(s)]
+	Class : structural.proxy.Test : 
+		 ---> Class : structural.proxy.Internet [2 time(s)]

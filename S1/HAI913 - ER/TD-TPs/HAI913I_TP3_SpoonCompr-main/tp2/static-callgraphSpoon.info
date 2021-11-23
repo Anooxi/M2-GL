@@ -1,0 +1,4998 @@
+Static Call Graph
+Methods: 399.
+Invocations: 424.0.
+Class: 131.
+behavioral.chain_of_responsibility.ConsoleLogger:
+	---> ::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.ErrorLogger:
+	---> behavioral.chain_of_responsibility.ILogger::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.FileLogger:
+	---> behavioral.chain_of_responsibility.ILogger::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.ILogger:
+behavioral.chain_of_responsibility.LogRequest:
+behavioral.chain_of_responsibility.LogRequestLevel:
+behavioral.chain_of_responsibility.Logger:
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.StandardLogRequestLevel:
+behavioral.chain_of_responsibility.Test:
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::getChainOfLoggers() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::getChainOfLoggers() [2 time(s)]
+
+behavioral.command.Command:
+behavioral.command.CommandManager:
+	---> behavioral.chain_of_responsibility.ILogger::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::history() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [3 time(s)]
+
+	---> behavioral.command.Command::redo() [4 time(s)]
+
+	---> behavioral.command.Command::redo() [5 time(s)]
+
+	---> behavioral.command.Command::redo() [6 time(s)]
+
+	---> behavioral.command.Command::redo() [7 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [1 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [2 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [3 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [4 time(s)]
+
+	---> behavioral.command.Command::undo() [1 time(s)]
+
+	---> behavioral.command.Command::undo() [2 time(s)]
+
+	---> behavioral.command.Command::undo() [3 time(s)]
+
+	---> behavioral.command.Command::undo() [4 time(s)]
+
+	---> behavioral.command.Command::undo() [5 time(s)]
+
+	---> behavioral.command.Command::undo() [6 time(s)]
+
+	---> behavioral.command.Command::undo() [7 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [1 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [2 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+behavioral.command.SwitchChannelCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [2 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [2 time(s)]
+
+behavioral.command.SwitchOffCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+behavioral.command.SwitchOnCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+behavioral.command.TV:
+behavioral.command.Test:
+	---> behavioral.command.TV::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [15 time(s)]
+
+behavioral.interpreter.AndExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [2 time(s)]
+
+behavioral.interpreter.BinaryExpression:
+behavioral.interpreter.Expression:
+behavioral.interpreter.OrExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [2 time(s)]
+
+behavioral.interpreter.TerminalExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+behavioral.interpreter.Test:
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.interpreter.Expression::getIsMarriedWomanExpression() [1 time(s)]
+
+behavioral.iterator.DiscJockey:
+	---> structural.composite.Song::displaySongs() [1 time(s)]
+
+behavioral.iterator.Song:
+	---> structural.composite.Song::toString() [1 time(s)]
+
+	---> structural.composite.Song::toString() [2 time(s)]
+
+	---> structural.composite.Song::toString() [3 time(s)]
+
+	---> structural.composite.Song::toString() [4 time(s)]
+
+behavioral.iterator.SongAggregate:
+behavioral.iterator.SongArray:
+	---> structural.composite.Song::iterator() [1 time(s)]
+
+	---> structural.composite.Song::iterator() [2 time(s)]
+
+	---> behavioral.iterator.SongArray::iterator() [3 time(s)]
+
+	---> behavioral.iterator.SongArray::getFilledArray() [1 time(s)]
+
+behavioral.iterator.SongHashtable:
+	---> behavioral.iterator.SongArray::iterator() [1 time(s)]
+
+	---> behavioral.iterator.SongArray::iterator() [2 time(s)]
+
+	---> behavioral.iterator.SongArray::addSong(java.lang.String,java.lang.String,int) [1 time(s)]
+
+behavioral.iterator.SongList:
+	---> behavioral.iterator.SongArray::iterator() [1 time(s)]
+
+	---> behavioral.iterator.SongArray::addSong(java.lang.String,java.lang.String,int) [1 time(s)]
+
+behavioral.iterator.Test:
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [15 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [16 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [17 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [18 time(s)]
+
+behavioral.mediator.ChatRoom:
+	---> behavioral.iterator.DiscJockey::addUser(behavioral.mediator.User) [1 time(s)]
+
+	---> behavioral.mediator.User::addUser(behavioral.mediator.User) [2 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [3 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [4 time(s)]
+
+behavioral.mediator.ChatUser:
+	---> behavioral.mediator.User::receive(java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.ChatUser::receive(java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.IChatRoom::send(java.lang.String,java.lang.String) [3 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [4 time(s)]
+
+behavioral.mediator.IChatRoom:
+behavioral.mediator.Test:
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [9 time(s)]
+
+behavioral.mediator.User:
+behavioral.memento.CareTaker:
+	---> behavioral.mediator.User::addMemento(behavioral.memento.Memento) [1 time(s)]
+
+	---> behavioral.mediator.User::get(int) [1 time(s)]
+
+behavioral.memento.Memento:
+behavioral.memento.Originator:
+	---> behavioral.memento.Originator::restoreState(behavioral.memento.Memento) [1 time(s)]
+
+	---> behavioral.memento.Memento::restoreState(behavioral.memento.Memento) [2 time(s)]
+
+behavioral.memento.Test:
+	---> behavioral.memento.Originator::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [15 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [16 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [17 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [18 time(s)]
+
+behavioral.observer.Observer:
+behavioral.observer.StockGrabber:
+	---> behavioral.observer.StockGrabber::setGoogleStock(double) [1 time(s)]
+
+	---> behavioral.observer.Observer::notifyObserver() [1 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [1 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [2 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [3 time(s)]
+
+	---> behavioral.observer.StockGrabber::setAppleStock(double) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::setIBMStock(double) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::register(behavioral.observer.Observer) [1 time(s)]
+
+behavioral.observer.StockObserver:
+	---> behavioral.observer.StockGrabber::update() [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::update() [2 time(s)]
+
+	---> behavioral.observer.StockGrabber::update() [3 time(s)]
+
+	---> behavioral.observer.StockObserver::update() [4 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [1 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [2 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [3 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [4 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [5 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [6 time(s)]
+
+behavioral.observer.Subject:
+behavioral.observer.Test:
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [10 time(s)]
+
+behavioral.state.ATMMachine:
+	---> behavioral.state.ATMState::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMState::insertPin(int) [1 time(s)]
+
+behavioral.state.ATMState:
+behavioral.state.CorrectPin:
+	---> behavioral.state.ATMState::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [4 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [5 time(s)]
+
+	---> behavioral.state.CorrectPin::requestCash(int) [6 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [7 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [8 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [9 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [1 time(s)]
+
+behavioral.state.HasCard:
+	---> behavioral.state.ATMMachine::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [4 time(s)]
+
+	---> behavioral.state.HasCard::insertPin(int) [5 time(s)]
+
+behavioral.state.IATMState:
+behavioral.state.NoCard:
+	---> behavioral.state.HasCard::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::insertCard() [3 time(s)]
+
+	---> behavioral.state.NoCard::ejectCard() [1 time(s)]
+
+	---> behavioral.state.NoCard::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.NoCard::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.NoCard::defaultMessage() [1 time(s)]
+
+behavioral.state.NoCash:
+	---> behavioral.state.NoCash::insertCard() [1 time(s)]
+
+	---> behavioral.state.NoCash::ejectCard() [1 time(s)]
+
+	---> behavioral.state.NoCash::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.NoCash::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.NoCash::defaultMessage() [1 time(s)]
+
+behavioral.state.Test:
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [11 time(s)]
+
+behavioral.strategy.Add:
+behavioral.strategy.ArithmeticOperation:
+behavioral.strategy.Calculator:
+	---> behavioral.strategy.ArithmeticOperation::computeOperation(int,int) [1 time(s)]
+
+behavioral.strategy.Divide:
+behavioral.strategy.Modulo:
+behavioral.strategy.Multiply:
+behavioral.strategy.Subtract:
+behavioral.strategy.Test:
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [1 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [2 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [3 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [4 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [5 time(s)]
+
+behavioral.template_method.Basketball:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+	---> behavioral.template_method.Game::start() [1 time(s)]
+
+	---> behavioral.template_method.Game::initialize() [1 time(s)]
+
+	---> behavioral.template_method.Game::end() [1 time(s)]
+
+behavioral.template_method.Football:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+	---> behavioral.template_method.Game::start() [1 time(s)]
+
+	---> behavioral.template_method.Game::initialize() [1 time(s)]
+
+	---> behavioral.template_method.Game::end() [1 time(s)]
+
+behavioral.template_method.Game:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+behavioral.template_method.Test:
+	---> behavioral.template_method.Game::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.template_method.Game::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.template_method.Game::main(java.lang.String[]) [3 time(s)]
+
+behavioral.visitor.Liquor:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Necessity:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Product:
+behavioral.visitor.TaxHolidayVisitor:
+	---> behavioral.visitor.Visitor::computeTax(behavioral.visitor.Product) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::computeTax(behavioral.visitor.Product) [2 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [3 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [4 time(s)]
+
+	---> behavioral.visitor.TaxHolidayVisitor::visit(behavioral.visitor.Liquor) [1 time(s)]
+
+	---> behavioral.visitor.TaxHolidayVisitor::visit(behavioral.visitor.Tobacco) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Necessity) [1 time(s)]
+
+behavioral.visitor.TaxVisitor:
+	---> behavioral.visitor.TaxVisitor::computeTax(behavioral.visitor.Product) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::computeTax(behavioral.visitor.Product) [2 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [3 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [4 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Liquor) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Tobacco) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Necessity) [1 time(s)]
+
+behavioral.visitor.Test:
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.visitor.Product::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [1 time(s)]
+
+	---> behavioral.visitor.Product::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [2 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [3 time(s)]
+
+behavioral.visitor.Tobacco:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Visitable:
+behavioral.visitor.Visitor:
+creational.abstract_factory.AbstractShapeFactory:
+	---> behavioral.visitor.Visitor::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [2 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.Rectangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.RoundedRectangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.RoundedShapeFactory:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.RoundedShapeType:
+creational.abstract_factory.RoundedTriangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.Shape:
+creational.abstract_factory.ShapeFactoryType:
+creational.abstract_factory.ShapeProducer:
+	---> creational.singleton.SingletonRegistry::createFactory(creational.abstract_factory.ShapeFactoryType) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::createFactory(creational.abstract_factory.ShapeFactoryType) [2 time(s)]
+
+creational.abstract_factory.ShapeType:
+creational.abstract_factory.StandardShapeFactory:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.StandardShapeType:
+creational.abstract_factory.Test:
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [10 time(s)]
+
+creational.abstract_factory.Triangle:
+	---> creational.abstract_factory.Shape::draw() [1 time(s)]
+
+creational.builder.IRobot:
+creational.builder.IRobotBuilder:
+creational.builder.OldRobotBuilder:
+	---> creational.builder.Robot::buildLegs() [1 time(s)]
+
+	---> creational.builder.Robot::buildArms() [1 time(s)]
+
+	---> creational.builder.Robot::buildHead() [1 time(s)]
+
+	---> creational.builder.Robot::buildTorso() [1 time(s)]
+
+creational.builder.Robot:
+	---> creational.builder.Robot::toString() [1 time(s)]
+
+	---> creational.builder.Robot::toString() [2 time(s)]
+
+	---> creational.builder.Robot::toString() [3 time(s)]
+
+	---> creational.builder.Robot::toString() [4 time(s)]
+
+	---> creational.builder.Robot::toString() [5 time(s)]
+
+creational.builder.RobotBuilder:
+creational.builder.RobotEngineer:
+	---> creational.builder.IRobotBuilder::getRobot() [1 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [1 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [2 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [3 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [4 time(s)]
+
+creational.builder.SophisticatedRobotBuilder:
+	---> creational.builder.Robot::buildLegs() [1 time(s)]
+
+	---> creational.builder.Robot::buildArms() [1 time(s)]
+
+	---> creational.builder.Robot::buildHead() [1 time(s)]
+
+	---> creational.builder.Robot::buildTorso() [1 time(s)]
+
+creational.builder.Test:
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [8 time(s)]
+
+creational.factory.BigUFOEnemyShip:
+	---> creational.builder.RobotEngineer::followHeroShip() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::enemyShipShoots() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::displayEnemyShip() [1 time(s)]
+
+creational.factory.EnemyShip:
+	---> creational.builder.RobotEngineer::followHeroShip() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::enemyShipShoots() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::displayEnemyShip() [1 time(s)]
+
+creational.factory.EnemyShipFactory:
+creational.factory.EnemyShipTesting:
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [1 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [2 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [3 time(s)]
+
+creational.factory.RocketEnemyShip:
+	---> creational.factory.EnemyShip::followHeroShip() [1 time(s)]
+
+	---> creational.factory.EnemyShip::enemyShipShoots() [1 time(s)]
+
+	---> creational.factory.EnemyShip::displayEnemyShip() [1 time(s)]
+
+creational.factory.Test:
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [1 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [2 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [3 time(s)]
+
+creational.factory.UFOEnemyShip:
+	---> creational.factory.EnemyShip::followHeroShip() [1 time(s)]
+
+	---> creational.factory.EnemyShip::enemyShipShoots() [1 time(s)]
+
+	---> creational.factory.EnemyShip::displayEnemyShip() [1 time(s)]
+
+creational.prototype.Circle:
+	---> creational.factory.EnemyShip::draw() [1 time(s)]
+
+	---> creational.factory.EnemyShip::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.Position:
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Position::toString() [1 time(s)]
+
+creational.prototype.Rectangle:
+	---> creational.prototype.Position::draw() [1 time(s)]
+
+	---> creational.prototype.Position::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.Shape:
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.ShapeCache:
+	---> creational.prototype.Shape::getShape(java.lang.String) [1 time(s)]
+
+	---> creational.prototype.Shape::getShape(java.lang.String) [2 time(s)]
+
+	---> creational.prototype.Shape::displayCacheContent() [1 time(s)]
+
+	---> creational.prototype.Shape::displayCacheContent() [2 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [1 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [2 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [3 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [4 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [5 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [6 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [7 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [8 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [9 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [10 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [11 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [12 time(s)]
+
+creational.prototype.Test:
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [10 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [11 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [12 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [13 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [14 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [15 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [16 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [17 time(s)]
+
+creational.prototype.Triangle:
+	---> creational.prototype.Shape::draw() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.singleton.ExtendedSingleton:
+	---> creational.prototype.Shape::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.ExtendedSingleton2:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.Singleton:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.SingletonRegistry:
+	---> creational.singleton.SingletonRegistry::lookup(java.lang.String) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::register(java.lang.String,creational.singleton.Singleton) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::register(java.lang.String,creational.singleton.Singleton) [2 time(s)]
+
+creational.singleton.Test:
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [10 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [11 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [12 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [13 time(s)]
+
+structural.adapter.EnemyAttacker:
+structural.adapter.EnemyRobot:
+	---> creational.singleton.ExtendedSingleton2::smashwithHands() [1 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::smashwithHands() [2 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::walkForward() [1 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::walkForward() [2 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::reactToHuman(java.lang.String) [1 time(s)]
+
+structural.adapter.EnemyRobotAdapter:
+	---> structural.adapter.EnemyRobot::driveForward() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::assignDriver(java.lang.String) [1 time(s)]
+
+structural.adapter.EnemyTank:
+	---> structural.adapter.EnemyRobot::driveForward() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::driveForward() [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::assignDriver(java.lang.String) [1 time(s)]
+
+structural.adapter.Test:
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [10 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [11 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [12 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [13 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [14 time(s)]
+
+structural.adapter.TestEnemyAttackers:
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [10 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [11 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [12 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [13 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [14 time(s)]
+
+structural.bridge.AdvancedRemote:
+	---> structural.bridge.Device::togglePower() [1 time(s)]
+
+	---> structural.bridge.Device::togglePower() [2 time(s)]
+
+	---> structural.bridge.Device::togglePower() [3 time(s)]
+
+	---> structural.bridge.Device::togglePower() [4 time(s)]
+
+	---> structural.bridge.Device::togglePower() [5 time(s)]
+
+	---> structural.bridge.Device::togglePower() [6 time(s)]
+
+	---> structural.bridge.Device::mute() [1 time(s)]
+
+	---> structural.bridge.Device::mute() [2 time(s)]
+
+	---> structural.bridge.Device::mute() [3 time(s)]
+
+	---> structural.bridge.Device::mute() [4 time(s)]
+
+	---> structural.bridge.Device::channelDown() [1 time(s)]
+
+	---> structural.bridge.Device::channelDown() [2 time(s)]
+
+	---> structural.bridge.Device::channelDown() [3 time(s)]
+
+	---> structural.bridge.Device::channelDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [1 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [2 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [3 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [1 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [2 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [3 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [4 time(s)]
+
+	---> structural.bridge.Device::channelUp() [1 time(s)]
+
+	---> structural.bridge.Device::channelUp() [2 time(s)]
+
+	---> structural.bridge.Device::channelUp() [3 time(s)]
+
+	---> structural.bridge.Device::channelUp() [4 time(s)]
+
+structural.bridge.Device:
+structural.bridge.Radio:
+structural.bridge.Remote:
+	---> structural.bridge.Device::togglePower() [1 time(s)]
+
+	---> structural.bridge.Device::togglePower() [2 time(s)]
+
+	---> structural.bridge.Device::togglePower() [3 time(s)]
+
+	---> structural.bridge.Device::togglePower() [4 time(s)]
+
+	---> structural.bridge.Device::togglePower() [5 time(s)]
+
+	---> structural.bridge.Device::togglePower() [6 time(s)]
+
+	---> structural.bridge.Device::channelDown() [1 time(s)]
+
+	---> structural.bridge.Device::channelDown() [2 time(s)]
+
+	---> structural.bridge.Device::channelDown() [3 time(s)]
+
+	---> structural.bridge.Device::channelDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [1 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [2 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [3 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [1 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [2 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [3 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [4 time(s)]
+
+	---> structural.bridge.Device::channelUp() [1 time(s)]
+
+	---> structural.bridge.Device::channelUp() [2 time(s)]
+
+	---> structural.bridge.Device::channelUp() [3 time(s)]
+
+	---> structural.bridge.Device::channelUp() [4 time(s)]
+
+structural.bridge.TV:
+structural.bridge.Test:
+	---> structural.bridge.Device::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [1 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [2 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [3 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [4 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [5 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [6 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [7 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [8 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [9 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [10 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [11 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [12 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [13 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [1 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [2 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [3 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [4 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [5 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [6 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [7 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [8 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [9 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [10 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [11 time(s)]
+
+structural.composite.DiscJockey:
+	---> structural.composite.SongComponent::displaySongList() [1 time(s)]
+
+structural.composite.Song:
+	---> structural.composite.SongComponent::getInfo() [1 time(s)]
+
+	---> structural.composite.Song::getInfo() [2 time(s)]
+
+	---> structural.composite.Song::getInfo() [3 time(s)]
+
+	---> structural.composite.Song::getInfo() [4 time(s)]
+
+	---> structural.composite.Song::getInfo() [5 time(s)]
+
+	---> structural.composite.Song::getInfo() [6 time(s)]
+
+	---> structural.composite.Song::getInfo() [7 time(s)]
+
+	---> structural.composite.Song::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongComponent:
+	---> structural.composite.SongComponent::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongGroup:
+	---> structural.composite.SongComponent::add(structural.composite.SongComponent) [1 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [1 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [2 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [3 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [4 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [5 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [6 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [7 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [8 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [9 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [10 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [11 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [12 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [13 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [14 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [15 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [16 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [17 time(s)]
+
+	---> structural.composite.SongComponent::remove(structural.composite.SongComponent) [1 time(s)]
+
+	---> structural.composite.SongComponent::getComponent(int) [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongListGenerator:
+	---> structural.composite.SongComponent::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.composite.DiscJockey::main(java.lang.String[]) [10 time(s)]
+
+structural.composite.Test:
+	---> structural.composite.SongComponent::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.composite.DiscJockey::main(java.lang.String[]) [10 time(s)]
+
+structural.decorator.Beverage:
+structural.decorator.BeverageDecorator:
+structural.decorator.CaramelDecorator:
+	---> structural.decorator.Beverage::description() [1 time(s)]
+
+	---> structural.decorator.Beverage::price() [1 time(s)]
+
+structural.decorator.Espresso:
+structural.decorator.IBeverage:
+structural.decorator.SugarDecorator:
+	---> structural.decorator.Beverage::description() [1 time(s)]
+
+	---> structural.decorator.Beverage::price() [1 time(s)]
+
+structural.decorator.Tea:
+structural.decorator.Test:
+	---> structural.decorator.Beverage::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [1 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [2 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [3 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [4 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [1 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [2 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [3 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [1 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [2 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [3 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [1 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [2 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [3 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [1 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [2 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [3 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [1 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [2 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [3 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [4 time(s)]
+
+structural.facade.BankAccount:
+structural.facade.BankAccountBalanceSystem:
+	---> structural.facade.BankAccount::canWithdraw(double) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountBalance() [1 time(s)]
+
+	---> structural.facade.BankAccount::deposit(double) [1 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [1 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [4 time(s)]
+
+	---> structural.facade.BankAccount::withdraw(double) [5 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [6 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [7 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [8 time(s)]
+
+structural.facade.BankAccountFacade:
+	---> structural.facade.BankAccountNumberChecker::depositCash(double) [1 time(s)]
+
+	---> structural.facade.BankAccountSecurityCodeChecker::depositCash(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [5 time(s)]
+
+	---> structural.facade.BankAccountNumberChecker::withdrawCash(double) [1 time(s)]
+
+	---> structural.facade.BankAccountSecurityCodeChecker::withdrawCash(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [5 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [6 time(s)]
+
+structural.facade.BankAccountNumberChecker:
+	---> structural.facade.BankAccountNumberChecker::match(int) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountNumber() [1 time(s)]
+
+structural.facade.BankAccountSecurityCodeChecker:
+	---> structural.facade.BankAccountSecurityCodeChecker::match(int) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountSecurityCode() [1 time(s)]
+
+structural.facade.BankAccountWelcomeWindow:
+	---> structural.facade.BankAccount::setWelcomeMessage() [1 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [2 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [3 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [4 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [5 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [6 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [7 time(s)]
+
+structural.facade.Test:
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [3 time(s)]
+
+structural.flyweight.Circle:
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [3 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [4 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [5 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [6 time(s)]
+
+structural.flyweight.Position:
+structural.flyweight.Shape:
+structural.flyweight.ShapeFactory:
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [3 time(s)]
+
+structural.flyweight.Test:
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.flyweight.Circle::getRandomRadius() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomX() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomY() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomColor() [1 time(s)]
+
+structural.proxy.Internet:
+structural.proxy.ProxyInternet:
+	---> structural.flyweight.Circle::connectTo(java.lang.String) [1 time(s)]
+
+	---> structural.flyweight.Circle::connectTo(java.lang.String) [2 time(s)]
+
+	---> structural.proxy.Internet::connectTo(java.lang.String) [3 time(s)]
+
+structural.proxy.RealInternet:
+	---> structural.proxy.Internet::connectTo(java.lang.String) [1 time(s)]
+
+structural.proxy.Test:
+	---> structural.proxy.Internet::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.proxy.Internet::main(java.lang.String[]) [2 time(s)]
+
+
+Static Call Graph
+Methods: 399.
+Invocations: 424.
+Class: 131.
+behavioral.chain_of_responsibility.ConsoleLogger:
+	---> ::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.ErrorLogger:
+	---> behavioral.chain_of_responsibility.ILogger::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.FileLogger:
+	---> behavioral.chain_of_responsibility.ILogger::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.ILogger:
+behavioral.chain_of_responsibility.LogRequest:
+behavioral.chain_of_responsibility.LogRequestLevel:
+behavioral.chain_of_responsibility.Logger:
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.StandardLogRequestLevel:
+behavioral.chain_of_responsibility.Test:
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::getChainOfLoggers() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::getChainOfLoggers() [2 time(s)]
+
+behavioral.command.Command:
+behavioral.command.CommandManager:
+	---> behavioral.chain_of_responsibility.ILogger::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::history() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [3 time(s)]
+
+	---> behavioral.command.Command::redo() [4 time(s)]
+
+	---> behavioral.command.Command::redo() [5 time(s)]
+
+	---> behavioral.command.Command::redo() [6 time(s)]
+
+	---> behavioral.command.Command::redo() [7 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [1 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [2 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [3 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [4 time(s)]
+
+	---> behavioral.command.Command::undo() [1 time(s)]
+
+	---> behavioral.command.Command::undo() [2 time(s)]
+
+	---> behavioral.command.Command::undo() [3 time(s)]
+
+	---> behavioral.command.Command::undo() [4 time(s)]
+
+	---> behavioral.command.Command::undo() [5 time(s)]
+
+	---> behavioral.command.Command::undo() [6 time(s)]
+
+	---> behavioral.command.Command::undo() [7 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [1 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [2 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+behavioral.command.SwitchChannelCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [2 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [2 time(s)]
+
+behavioral.command.SwitchOffCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+behavioral.command.SwitchOnCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+behavioral.command.TV:
+behavioral.command.Test:
+	---> behavioral.command.TV::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [15 time(s)]
+
+behavioral.interpreter.AndExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [2 time(s)]
+
+behavioral.interpreter.BinaryExpression:
+behavioral.interpreter.Expression:
+behavioral.interpreter.OrExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [2 time(s)]
+
+behavioral.interpreter.TerminalExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+behavioral.interpreter.Test:
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.interpreter.Expression::getIsMarriedWomanExpression() [1 time(s)]
+
+behavioral.iterator.DiscJockey:
+	---> structural.composite.Song::displaySongs() [1 time(s)]
+
+behavioral.iterator.Song:
+	---> structural.composite.Song::toString() [1 time(s)]
+
+	---> structural.composite.Song::toString() [2 time(s)]
+
+	---> structural.composite.Song::toString() [3 time(s)]
+
+	---> structural.composite.Song::toString() [4 time(s)]
+
+behavioral.iterator.SongAggregate:
+behavioral.iterator.SongArray:
+	---> structural.composite.Song::iterator() [1 time(s)]
+
+	---> structural.composite.Song::iterator() [2 time(s)]
+
+	---> behavioral.iterator.SongArray::iterator() [3 time(s)]
+
+	---> behavioral.iterator.SongArray::getFilledArray() [1 time(s)]
+
+behavioral.iterator.SongHashtable:
+	---> behavioral.iterator.SongArray::iterator() [1 time(s)]
+
+	---> behavioral.iterator.SongArray::iterator() [2 time(s)]
+
+	---> behavioral.iterator.SongArray::addSong(java.lang.String,java.lang.String,int) [1 time(s)]
+
+behavioral.iterator.SongList:
+	---> behavioral.iterator.SongArray::iterator() [1 time(s)]
+
+	---> behavioral.iterator.SongArray::addSong(java.lang.String,java.lang.String,int) [1 time(s)]
+
+behavioral.iterator.Test:
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [15 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [16 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [17 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [18 time(s)]
+
+behavioral.mediator.ChatRoom:
+	---> behavioral.iterator.DiscJockey::addUser(behavioral.mediator.User) [1 time(s)]
+
+	---> behavioral.mediator.User::addUser(behavioral.mediator.User) [2 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [3 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [4 time(s)]
+
+behavioral.mediator.ChatUser:
+	---> behavioral.mediator.User::receive(java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.ChatUser::receive(java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.IChatRoom::send(java.lang.String,java.lang.String) [3 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [4 time(s)]
+
+behavioral.mediator.IChatRoom:
+behavioral.mediator.Test:
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [9 time(s)]
+
+behavioral.mediator.User:
+behavioral.memento.CareTaker:
+	---> behavioral.mediator.User::addMemento(behavioral.memento.Memento) [1 time(s)]
+
+	---> behavioral.mediator.User::get(int) [1 time(s)]
+
+behavioral.memento.Memento:
+behavioral.memento.Originator:
+	---> behavioral.memento.Originator::restoreState(behavioral.memento.Memento) [1 time(s)]
+
+	---> behavioral.memento.Memento::restoreState(behavioral.memento.Memento) [2 time(s)]
+
+behavioral.memento.Test:
+	---> behavioral.memento.Originator::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [15 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [16 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [17 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [18 time(s)]
+
+behavioral.observer.Observer:
+behavioral.observer.StockGrabber:
+	---> behavioral.observer.StockGrabber::setGoogleStock(double) [1 time(s)]
+
+	---> behavioral.observer.Observer::notifyObserver() [1 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [1 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [2 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [3 time(s)]
+
+	---> behavioral.observer.StockGrabber::setAppleStock(double) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::setIBMStock(double) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::register(behavioral.observer.Observer) [1 time(s)]
+
+behavioral.observer.StockObserver:
+	---> behavioral.observer.StockGrabber::update() [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::update() [2 time(s)]
+
+	---> behavioral.observer.StockGrabber::update() [3 time(s)]
+
+	---> behavioral.observer.StockObserver::update() [4 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [1 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [2 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [3 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [4 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [5 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [6 time(s)]
+
+behavioral.observer.Subject:
+behavioral.observer.Test:
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [10 time(s)]
+
+behavioral.state.ATMMachine:
+	---> behavioral.state.ATMState::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMState::insertPin(int) [1 time(s)]
+
+behavioral.state.ATMState:
+behavioral.state.CorrectPin:
+	---> behavioral.state.ATMState::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [4 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [5 time(s)]
+
+	---> behavioral.state.CorrectPin::requestCash(int) [6 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [7 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [8 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [9 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [1 time(s)]
+
+behavioral.state.HasCard:
+	---> behavioral.state.ATMMachine::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [4 time(s)]
+
+	---> behavioral.state.HasCard::insertPin(int) [5 time(s)]
+
+behavioral.state.IATMState:
+behavioral.state.NoCard:
+	---> behavioral.state.HasCard::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::insertCard() [3 time(s)]
+
+	---> behavioral.state.NoCard::ejectCard() [1 time(s)]
+
+	---> behavioral.state.NoCard::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.NoCard::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.NoCard::defaultMessage() [1 time(s)]
+
+behavioral.state.NoCash:
+	---> behavioral.state.NoCash::insertCard() [1 time(s)]
+
+	---> behavioral.state.NoCash::ejectCard() [1 time(s)]
+
+	---> behavioral.state.NoCash::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.NoCash::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.NoCash::defaultMessage() [1 time(s)]
+
+behavioral.state.Test:
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [11 time(s)]
+
+behavioral.strategy.Add:
+behavioral.strategy.ArithmeticOperation:
+behavioral.strategy.Calculator:
+	---> behavioral.strategy.ArithmeticOperation::computeOperation(int,int) [1 time(s)]
+
+behavioral.strategy.Divide:
+behavioral.strategy.Modulo:
+behavioral.strategy.Multiply:
+behavioral.strategy.Subtract:
+behavioral.strategy.Test:
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [1 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [2 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [3 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [4 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [5 time(s)]
+
+behavioral.template_method.Basketball:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+	---> behavioral.template_method.Game::start() [1 time(s)]
+
+	---> behavioral.template_method.Game::initialize() [1 time(s)]
+
+	---> behavioral.template_method.Game::end() [1 time(s)]
+
+behavioral.template_method.Football:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+	---> behavioral.template_method.Game::start() [1 time(s)]
+
+	---> behavioral.template_method.Game::initialize() [1 time(s)]
+
+	---> behavioral.template_method.Game::end() [1 time(s)]
+
+behavioral.template_method.Game:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+behavioral.template_method.Test:
+	---> behavioral.template_method.Game::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.template_method.Game::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.template_method.Game::main(java.lang.String[]) [3 time(s)]
+
+behavioral.visitor.Liquor:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Necessity:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Product:
+behavioral.visitor.TaxHolidayVisitor:
+	---> behavioral.visitor.Visitor::computeTax(behavioral.visitor.Product) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::computeTax(behavioral.visitor.Product) [2 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [3 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [4 time(s)]
+
+	---> behavioral.visitor.TaxHolidayVisitor::visit(behavioral.visitor.Liquor) [1 time(s)]
+
+	---> behavioral.visitor.TaxHolidayVisitor::visit(behavioral.visitor.Tobacco) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Necessity) [1 time(s)]
+
+behavioral.visitor.TaxVisitor:
+	---> behavioral.visitor.TaxVisitor::computeTax(behavioral.visitor.Product) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::computeTax(behavioral.visitor.Product) [2 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [3 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [4 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Liquor) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Tobacco) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Necessity) [1 time(s)]
+
+behavioral.visitor.Test:
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.visitor.Product::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [1 time(s)]
+
+	---> behavioral.visitor.Product::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [2 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [3 time(s)]
+
+behavioral.visitor.Tobacco:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Visitable:
+behavioral.visitor.Visitor:
+creational.abstract_factory.AbstractShapeFactory:
+	---> behavioral.visitor.Visitor::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [2 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.Rectangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.RoundedRectangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.RoundedShapeFactory:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.RoundedShapeType:
+creational.abstract_factory.RoundedTriangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.Shape:
+creational.abstract_factory.ShapeFactoryType:
+creational.abstract_factory.ShapeProducer:
+	---> creational.singleton.SingletonRegistry::createFactory(creational.abstract_factory.ShapeFactoryType) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::createFactory(creational.abstract_factory.ShapeFactoryType) [2 time(s)]
+
+creational.abstract_factory.ShapeType:
+creational.abstract_factory.StandardShapeFactory:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.StandardShapeType:
+creational.abstract_factory.Test:
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [10 time(s)]
+
+creational.abstract_factory.Triangle:
+	---> creational.abstract_factory.Shape::draw() [1 time(s)]
+
+creational.builder.IRobot:
+creational.builder.IRobotBuilder:
+creational.builder.OldRobotBuilder:
+	---> creational.builder.Robot::buildLegs() [1 time(s)]
+
+	---> creational.builder.Robot::buildArms() [1 time(s)]
+
+	---> creational.builder.Robot::buildHead() [1 time(s)]
+
+	---> creational.builder.Robot::buildTorso() [1 time(s)]
+
+creational.builder.Robot:
+	---> creational.builder.Robot::toString() [1 time(s)]
+
+	---> creational.builder.Robot::toString() [2 time(s)]
+
+	---> creational.builder.Robot::toString() [3 time(s)]
+
+	---> creational.builder.Robot::toString() [4 time(s)]
+
+	---> creational.builder.Robot::toString() [5 time(s)]
+
+creational.builder.RobotBuilder:
+creational.builder.RobotEngineer:
+	---> creational.builder.IRobotBuilder::getRobot() [1 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [1 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [2 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [3 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [4 time(s)]
+
+creational.builder.SophisticatedRobotBuilder:
+	---> creational.builder.Robot::buildLegs() [1 time(s)]
+
+	---> creational.builder.Robot::buildArms() [1 time(s)]
+
+	---> creational.builder.Robot::buildHead() [1 time(s)]
+
+	---> creational.builder.Robot::buildTorso() [1 time(s)]
+
+creational.builder.Test:
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [8 time(s)]
+
+creational.factory.BigUFOEnemyShip:
+	---> creational.builder.RobotEngineer::followHeroShip() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::enemyShipShoots() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::displayEnemyShip() [1 time(s)]
+
+creational.factory.EnemyShip:
+	---> creational.builder.RobotEngineer::followHeroShip() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::enemyShipShoots() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::displayEnemyShip() [1 time(s)]
+
+creational.factory.EnemyShipFactory:
+creational.factory.EnemyShipTesting:
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [1 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [2 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [3 time(s)]
+
+creational.factory.RocketEnemyShip:
+	---> creational.factory.EnemyShip::followHeroShip() [1 time(s)]
+
+	---> creational.factory.EnemyShip::enemyShipShoots() [1 time(s)]
+
+	---> creational.factory.EnemyShip::displayEnemyShip() [1 time(s)]
+
+creational.factory.Test:
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [1 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [2 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [3 time(s)]
+
+creational.factory.UFOEnemyShip:
+	---> creational.factory.EnemyShip::followHeroShip() [1 time(s)]
+
+	---> creational.factory.EnemyShip::enemyShipShoots() [1 time(s)]
+
+	---> creational.factory.EnemyShip::displayEnemyShip() [1 time(s)]
+
+creational.prototype.Circle:
+	---> creational.factory.EnemyShip::draw() [1 time(s)]
+
+	---> creational.factory.EnemyShip::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.Position:
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Position::toString() [1 time(s)]
+
+creational.prototype.Rectangle:
+	---> creational.prototype.Position::draw() [1 time(s)]
+
+	---> creational.prototype.Position::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.Shape:
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.ShapeCache:
+	---> creational.prototype.Shape::getShape(java.lang.String) [1 time(s)]
+
+	---> creational.prototype.Shape::getShape(java.lang.String) [2 time(s)]
+
+	---> creational.prototype.Shape::displayCacheContent() [1 time(s)]
+
+	---> creational.prototype.Shape::displayCacheContent() [2 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [1 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [2 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [3 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [4 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [5 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [6 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [7 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [8 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [9 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [10 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [11 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [12 time(s)]
+
+creational.prototype.Test:
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [10 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [11 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [12 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [13 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [14 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [15 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [16 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [17 time(s)]
+
+creational.prototype.Triangle:
+	---> creational.prototype.Shape::draw() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.singleton.ExtendedSingleton:
+	---> creational.prototype.Shape::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.ExtendedSingleton2:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.Singleton:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.SingletonRegistry:
+	---> creational.singleton.SingletonRegistry::lookup(java.lang.String) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::register(java.lang.String,creational.singleton.Singleton) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::register(java.lang.String,creational.singleton.Singleton) [2 time(s)]
+
+creational.singleton.Test:
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [10 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [11 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [12 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [13 time(s)]
+
+structural.adapter.EnemyAttacker:
+structural.adapter.EnemyRobot:
+	---> creational.singleton.ExtendedSingleton2::smashwithHands() [1 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::smashwithHands() [2 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::walkForward() [1 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::walkForward() [2 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::reactToHuman(java.lang.String) [1 time(s)]
+
+structural.adapter.EnemyRobotAdapter:
+	---> structural.adapter.EnemyRobot::driveForward() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::assignDriver(java.lang.String) [1 time(s)]
+
+structural.adapter.EnemyTank:
+	---> structural.adapter.EnemyRobot::driveForward() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::driveForward() [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::assignDriver(java.lang.String) [1 time(s)]
+
+structural.adapter.Test:
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [10 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [11 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [12 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [13 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [14 time(s)]
+
+structural.adapter.TestEnemyAttackers:
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [10 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [11 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [12 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [13 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [14 time(s)]
+
+structural.bridge.AdvancedRemote:
+	---> structural.bridge.Device::togglePower() [1 time(s)]
+
+	---> structural.bridge.Device::togglePower() [2 time(s)]
+
+	---> structural.bridge.Device::togglePower() [3 time(s)]
+
+	---> structural.bridge.Device::togglePower() [4 time(s)]
+
+	---> structural.bridge.Device::togglePower() [5 time(s)]
+
+	---> structural.bridge.Device::togglePower() [6 time(s)]
+
+	---> structural.bridge.Device::mute() [1 time(s)]
+
+	---> structural.bridge.Device::mute() [2 time(s)]
+
+	---> structural.bridge.Device::mute() [3 time(s)]
+
+	---> structural.bridge.Device::mute() [4 time(s)]
+
+	---> structural.bridge.Device::channelDown() [1 time(s)]
+
+	---> structural.bridge.Device::channelDown() [2 time(s)]
+
+	---> structural.bridge.Device::channelDown() [3 time(s)]
+
+	---> structural.bridge.Device::channelDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [1 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [2 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [3 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [1 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [2 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [3 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [4 time(s)]
+
+	---> structural.bridge.Device::channelUp() [1 time(s)]
+
+	---> structural.bridge.Device::channelUp() [2 time(s)]
+
+	---> structural.bridge.Device::channelUp() [3 time(s)]
+
+	---> structural.bridge.Device::channelUp() [4 time(s)]
+
+structural.bridge.Device:
+structural.bridge.Radio:
+structural.bridge.Remote:
+	---> structural.bridge.Device::togglePower() [1 time(s)]
+
+	---> structural.bridge.Device::togglePower() [2 time(s)]
+
+	---> structural.bridge.Device::togglePower() [3 time(s)]
+
+	---> structural.bridge.Device::togglePower() [4 time(s)]
+
+	---> structural.bridge.Device::togglePower() [5 time(s)]
+
+	---> structural.bridge.Device::togglePower() [6 time(s)]
+
+	---> structural.bridge.Device::channelDown() [1 time(s)]
+
+	---> structural.bridge.Device::channelDown() [2 time(s)]
+
+	---> structural.bridge.Device::channelDown() [3 time(s)]
+
+	---> structural.bridge.Device::channelDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [1 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [2 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [3 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [1 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [2 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [3 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [4 time(s)]
+
+	---> structural.bridge.Device::channelUp() [1 time(s)]
+
+	---> structural.bridge.Device::channelUp() [2 time(s)]
+
+	---> structural.bridge.Device::channelUp() [3 time(s)]
+
+	---> structural.bridge.Device::channelUp() [4 time(s)]
+
+structural.bridge.TV:
+structural.bridge.Test:
+	---> structural.bridge.Device::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [1 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [2 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [3 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [4 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [5 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [6 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [7 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [8 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [9 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [10 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [11 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [12 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [13 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [1 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [2 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [3 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [4 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [5 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [6 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [7 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [8 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [9 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [10 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [11 time(s)]
+
+structural.composite.DiscJockey:
+	---> structural.composite.SongComponent::displaySongList() [1 time(s)]
+
+structural.composite.Song:
+	---> structural.composite.SongComponent::getInfo() [1 time(s)]
+
+	---> structural.composite.Song::getInfo() [2 time(s)]
+
+	---> structural.composite.Song::getInfo() [3 time(s)]
+
+	---> structural.composite.Song::getInfo() [4 time(s)]
+
+	---> structural.composite.Song::getInfo() [5 time(s)]
+
+	---> structural.composite.Song::getInfo() [6 time(s)]
+
+	---> structural.composite.Song::getInfo() [7 time(s)]
+
+	---> structural.composite.Song::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongComponent:
+	---> structural.composite.SongComponent::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongGroup:
+	---> structural.composite.SongComponent::add(structural.composite.SongComponent) [1 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [1 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [2 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [3 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [4 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [5 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [6 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [7 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [8 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [9 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [10 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [11 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [12 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [13 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [14 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [15 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [16 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [17 time(s)]
+
+	---> structural.composite.SongComponent::remove(structural.composite.SongComponent) [1 time(s)]
+
+	---> structural.composite.SongComponent::getComponent(int) [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongListGenerator:
+	---> structural.composite.SongComponent::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.composite.DiscJockey::main(java.lang.String[]) [10 time(s)]
+
+structural.composite.Test:
+	---> structural.composite.SongComponent::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.composite.DiscJockey::main(java.lang.String[]) [10 time(s)]
+
+structural.decorator.Beverage:
+structural.decorator.BeverageDecorator:
+structural.decorator.CaramelDecorator:
+	---> structural.decorator.Beverage::description() [1 time(s)]
+
+	---> structural.decorator.Beverage::price() [1 time(s)]
+
+structural.decorator.Espresso:
+structural.decorator.IBeverage:
+structural.decorator.SugarDecorator:
+	---> structural.decorator.Beverage::description() [1 time(s)]
+
+	---> structural.decorator.Beverage::price() [1 time(s)]
+
+structural.decorator.Tea:
+structural.decorator.Test:
+	---> structural.decorator.Beverage::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [1 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [2 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [3 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [4 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [1 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [2 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [3 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [1 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [2 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [3 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [1 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [2 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [3 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [1 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [2 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [3 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [1 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [2 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [3 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [4 time(s)]
+
+structural.facade.BankAccount:
+structural.facade.BankAccountBalanceSystem:
+	---> structural.facade.BankAccount::canWithdraw(double) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountBalance() [1 time(s)]
+
+	---> structural.facade.BankAccount::deposit(double) [1 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [1 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [4 time(s)]
+
+	---> structural.facade.BankAccount::withdraw(double) [5 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [6 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [7 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [8 time(s)]
+
+structural.facade.BankAccountFacade:
+	---> structural.facade.BankAccountNumberChecker::depositCash(double) [1 time(s)]
+
+	---> structural.facade.BankAccountSecurityCodeChecker::depositCash(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [5 time(s)]
+
+	---> structural.facade.BankAccountNumberChecker::withdrawCash(double) [1 time(s)]
+
+	---> structural.facade.BankAccountSecurityCodeChecker::withdrawCash(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [5 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [6 time(s)]
+
+structural.facade.BankAccountNumberChecker:
+	---> structural.facade.BankAccountNumberChecker::match(int) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountNumber() [1 time(s)]
+
+structural.facade.BankAccountSecurityCodeChecker:
+	---> structural.facade.BankAccountSecurityCodeChecker::match(int) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountSecurityCode() [1 time(s)]
+
+structural.facade.BankAccountWelcomeWindow:
+	---> structural.facade.BankAccount::setWelcomeMessage() [1 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [2 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [3 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [4 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [5 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [6 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [7 time(s)]
+
+structural.facade.Test:
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [3 time(s)]
+
+structural.flyweight.Circle:
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [3 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [4 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [5 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [6 time(s)]
+
+structural.flyweight.Position:
+structural.flyweight.Shape:
+structural.flyweight.ShapeFactory:
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [3 time(s)]
+
+structural.flyweight.Test:
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.flyweight.Circle::getRandomRadius() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomX() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomY() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomColor() [1 time(s)]
+
+structural.proxy.Internet:
+structural.proxy.ProxyInternet:
+	---> structural.flyweight.Circle::connectTo(java.lang.String) [1 time(s)]
+
+	---> structural.flyweight.Circle::connectTo(java.lang.String) [2 time(s)]
+
+	---> structural.proxy.Internet::connectTo(java.lang.String) [3 time(s)]
+
+structural.proxy.RealInternet:
+	---> structural.proxy.Internet::connectTo(java.lang.String) [1 time(s)]
+
+structural.proxy.Test:
+	---> structural.proxy.Internet::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.proxy.Internet::main(java.lang.String[]) [2 time(s)]
+
+
+Static Call Graph
+Methods: 399.
+Invocations: 424.
+Class: 131.
+behavioral.chain_of_responsibility.ConsoleLogger:
+	---> ::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.ErrorLogger:
+	---> behavioral.chain_of_responsibility.ILogger::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.FileLogger:
+	---> behavioral.chain_of_responsibility.ILogger::write(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::write(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.ILogger:
+behavioral.chain_of_responsibility.LogRequest:
+behavioral.chain_of_responsibility.LogRequestLevel:
+behavioral.chain_of_responsibility.Logger:
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequestLevel::log(behavioral.chain_of_responsibility.LogRequest) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.LogRequest::log(behavioral.chain_of_responsibility.LogRequest) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.Logger::log(behavioral.chain_of_responsibility.LogRequest) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::log(behavioral.chain_of_responsibility.LogRequest) [5 time(s)]
+
+behavioral.chain_of_responsibility.StandardLogRequestLevel:
+behavioral.chain_of_responsibility.Test:
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::getChainOfLoggers() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::getChainOfLoggers() [2 time(s)]
+
+behavioral.command.Command:
+behavioral.command.CommandManager:
+	---> behavioral.chain_of_responsibility.ILogger::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::history() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [1 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [2 time(s)]
+
+	---> behavioral.chain_of_responsibility.ILogger::redo() [3 time(s)]
+
+	---> behavioral.command.Command::redo() [4 time(s)]
+
+	---> behavioral.command.Command::redo() [5 time(s)]
+
+	---> behavioral.command.Command::redo() [6 time(s)]
+
+	---> behavioral.command.Command::redo() [7 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [1 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [2 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [3 time(s)]
+
+	---> behavioral.command.Command::execute(behavioral.command.Command) [4 time(s)]
+
+	---> behavioral.command.Command::undo() [1 time(s)]
+
+	---> behavioral.command.Command::undo() [2 time(s)]
+
+	---> behavioral.command.Command::undo() [3 time(s)]
+
+	---> behavioral.command.Command::undo() [4 time(s)]
+
+	---> behavioral.command.Command::undo() [5 time(s)]
+
+	---> behavioral.command.Command::undo() [6 time(s)]
+
+	---> behavioral.command.Command::undo() [7 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [1 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [2 time(s)]
+
+	---> behavioral.command.Command::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+behavioral.command.SwitchChannelCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [2 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [2 time(s)]
+
+behavioral.command.SwitchOffCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+behavioral.command.SwitchOnCommand:
+	---> behavioral.command.TV::getName() [1 time(s)]
+
+	---> behavioral.command.TV::execute() [1 time(s)]
+
+	---> behavioral.command.TV::undo() [1 time(s)]
+
+behavioral.command.TV:
+behavioral.command.Test:
+	---> behavioral.command.TV::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.command.CommandManager::main(java.lang.String[]) [15 time(s)]
+
+behavioral.interpreter.AndExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [2 time(s)]
+
+behavioral.interpreter.BinaryExpression:
+behavioral.interpreter.Expression:
+behavioral.interpreter.OrExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [2 time(s)]
+
+behavioral.interpreter.TerminalExpression:
+	---> behavioral.interpreter.Expression::interpret(java.lang.String) [1 time(s)]
+
+behavioral.interpreter.Test:
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.interpreter.Expression::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.interpreter.Expression::getIsMarriedWomanExpression() [1 time(s)]
+
+behavioral.iterator.DiscJockey:
+	---> structural.composite.Song::displaySongs() [1 time(s)]
+
+behavioral.iterator.Song:
+	---> structural.composite.Song::toString() [1 time(s)]
+
+	---> structural.composite.Song::toString() [2 time(s)]
+
+	---> structural.composite.Song::toString() [3 time(s)]
+
+	---> structural.composite.Song::toString() [4 time(s)]
+
+behavioral.iterator.SongAggregate:
+behavioral.iterator.SongArray:
+	---> structural.composite.Song::iterator() [1 time(s)]
+
+	---> structural.composite.Song::iterator() [2 time(s)]
+
+	---> behavioral.iterator.SongArray::iterator() [3 time(s)]
+
+	---> behavioral.iterator.SongArray::getFilledArray() [1 time(s)]
+
+behavioral.iterator.SongHashtable:
+	---> behavioral.iterator.SongArray::iterator() [1 time(s)]
+
+	---> behavioral.iterator.SongArray::iterator() [2 time(s)]
+
+	---> behavioral.iterator.SongArray::addSong(java.lang.String,java.lang.String,int) [1 time(s)]
+
+behavioral.iterator.SongList:
+	---> behavioral.iterator.SongArray::iterator() [1 time(s)]
+
+	---> behavioral.iterator.SongArray::addSong(java.lang.String,java.lang.String,int) [1 time(s)]
+
+behavioral.iterator.Test:
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [15 time(s)]
+
+	---> behavioral.iterator.SongAggregate::main(java.lang.String[]) [16 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [17 time(s)]
+
+	---> behavioral.iterator.DiscJockey::main(java.lang.String[]) [18 time(s)]
+
+behavioral.mediator.ChatRoom:
+	---> behavioral.iterator.DiscJockey::addUser(behavioral.mediator.User) [1 time(s)]
+
+	---> behavioral.mediator.User::addUser(behavioral.mediator.User) [2 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [3 time(s)]
+
+	---> behavioral.mediator.User::sendMessage(java.lang.String,java.lang.String) [4 time(s)]
+
+behavioral.mediator.ChatUser:
+	---> behavioral.mediator.User::receive(java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.ChatUser::receive(java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [1 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [2 time(s)]
+
+	---> behavioral.mediator.IChatRoom::send(java.lang.String,java.lang.String) [3 time(s)]
+
+	---> behavioral.mediator.ChatUser::send(java.lang.String,java.lang.String) [4 time(s)]
+
+behavioral.mediator.IChatRoom:
+behavioral.mediator.Test:
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.mediator.IChatRoom::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.mediator.User::main(java.lang.String[]) [9 time(s)]
+
+behavioral.mediator.User:
+behavioral.memento.CareTaker:
+	---> behavioral.mediator.User::addMemento(behavioral.memento.Memento) [1 time(s)]
+
+	---> behavioral.mediator.User::get(int) [1 time(s)]
+
+behavioral.memento.Memento:
+behavioral.memento.Originator:
+	---> behavioral.memento.Originator::restoreState(behavioral.memento.Memento) [1 time(s)]
+
+	---> behavioral.memento.Memento::restoreState(behavioral.memento.Memento) [2 time(s)]
+
+behavioral.memento.Test:
+	---> behavioral.memento.Originator::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [11 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [12 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [13 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [14 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [15 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [16 time(s)]
+
+	---> behavioral.memento.CareTaker::main(java.lang.String[]) [17 time(s)]
+
+	---> behavioral.memento.Originator::main(java.lang.String[]) [18 time(s)]
+
+behavioral.observer.Observer:
+behavioral.observer.StockGrabber:
+	---> behavioral.observer.StockGrabber::setGoogleStock(double) [1 time(s)]
+
+	---> behavioral.observer.Observer::notifyObserver() [1 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [1 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [2 time(s)]
+
+	---> behavioral.observer.Observer::unregister(behavioral.observer.Observer) [3 time(s)]
+
+	---> behavioral.observer.StockGrabber::setAppleStock(double) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::setIBMStock(double) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::register(behavioral.observer.Observer) [1 time(s)]
+
+behavioral.observer.StockObserver:
+	---> behavioral.observer.StockGrabber::update() [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::update() [2 time(s)]
+
+	---> behavioral.observer.StockGrabber::update() [3 time(s)]
+
+	---> behavioral.observer.StockObserver::update() [4 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [1 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [2 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [3 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [4 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [5 time(s)]
+
+	---> behavioral.observer.StockObserver::displayPrices() [6 time(s)]
+
+behavioral.observer.Subject:
+behavioral.observer.Test:
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.observer.StockGrabber::main(java.lang.String[]) [10 time(s)]
+
+behavioral.state.ATMMachine:
+	---> behavioral.state.ATMState::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMState::insertPin(int) [1 time(s)]
+
+behavioral.state.ATMState:
+behavioral.state.CorrectPin:
+	---> behavioral.state.ATMState::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMState::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [4 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [5 time(s)]
+
+	---> behavioral.state.CorrectPin::requestCash(int) [6 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [7 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [8 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [9 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [1 time(s)]
+
+behavioral.state.HasCard:
+	---> behavioral.state.ATMMachine::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::ejectCard() [3 time(s)]
+
+	---> behavioral.state.ATMMachine::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::insertPin(int) [4 time(s)]
+
+	---> behavioral.state.HasCard::insertPin(int) [5 time(s)]
+
+behavioral.state.IATMState:
+behavioral.state.NoCard:
+	---> behavioral.state.HasCard::insertCard() [1 time(s)]
+
+	---> behavioral.state.ATMMachine::insertCard() [2 time(s)]
+
+	---> behavioral.state.ATMMachine::insertCard() [3 time(s)]
+
+	---> behavioral.state.NoCard::ejectCard() [1 time(s)]
+
+	---> behavioral.state.NoCard::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.NoCard::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.NoCard::defaultMessage() [1 time(s)]
+
+behavioral.state.NoCash:
+	---> behavioral.state.NoCash::insertCard() [1 time(s)]
+
+	---> behavioral.state.NoCash::ejectCard() [1 time(s)]
+
+	---> behavioral.state.NoCash::requestCash(int) [1 time(s)]
+
+	---> behavioral.state.NoCash::insertPin(int) [1 time(s)]
+
+	---> behavioral.state.NoCash::defaultMessage() [1 time(s)]
+
+behavioral.state.Test:
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [6 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [7 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [8 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [9 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [10 time(s)]
+
+	---> behavioral.state.ATMMachine::main(java.lang.String[]) [11 time(s)]
+
+behavioral.strategy.Add:
+behavioral.strategy.ArithmeticOperation:
+behavioral.strategy.Calculator:
+	---> behavioral.strategy.ArithmeticOperation::computeOperation(int,int) [1 time(s)]
+
+behavioral.strategy.Divide:
+behavioral.strategy.Modulo:
+behavioral.strategy.Multiply:
+behavioral.strategy.Subtract:
+behavioral.strategy.Test:
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [1 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [2 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [3 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::computeAndDisplay(behavioral.strategy.ArithmeticOperation,java.lang.String,int,int) [4 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.strategy.ArithmeticOperation::main(java.lang.String[]) [5 time(s)]
+
+behavioral.template_method.Basketball:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+	---> behavioral.template_method.Game::start() [1 time(s)]
+
+	---> behavioral.template_method.Game::initialize() [1 time(s)]
+
+	---> behavioral.template_method.Game::end() [1 time(s)]
+
+behavioral.template_method.Football:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+	---> behavioral.template_method.Game::start() [1 time(s)]
+
+	---> behavioral.template_method.Game::initialize() [1 time(s)]
+
+	---> behavioral.template_method.Game::end() [1 time(s)]
+
+behavioral.template_method.Game:
+	---> behavioral.template_method.Game::play() [1 time(s)]
+
+	---> behavioral.template_method.Game::play() [2 time(s)]
+
+	---> behavioral.template_method.Game::play() [3 time(s)]
+
+behavioral.template_method.Test:
+	---> behavioral.template_method.Game::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.template_method.Game::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.template_method.Game::main(java.lang.String[]) [3 time(s)]
+
+behavioral.visitor.Liquor:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Necessity:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Product:
+behavioral.visitor.TaxHolidayVisitor:
+	---> behavioral.visitor.Visitor::computeTax(behavioral.visitor.Product) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::computeTax(behavioral.visitor.Product) [2 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [3 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [4 time(s)]
+
+	---> behavioral.visitor.TaxHolidayVisitor::visit(behavioral.visitor.Liquor) [1 time(s)]
+
+	---> behavioral.visitor.TaxHolidayVisitor::visit(behavioral.visitor.Tobacco) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Necessity) [1 time(s)]
+
+behavioral.visitor.TaxVisitor:
+	---> behavioral.visitor.TaxVisitor::computeTax(behavioral.visitor.Product) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::computeTax(behavioral.visitor.Product) [2 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [3 time(s)]
+
+	---> behavioral.visitor.Product::computeTax(behavioral.visitor.Product) [4 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Liquor) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Tobacco) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::visit(behavioral.visitor.Necessity) [1 time(s)]
+
+behavioral.visitor.Test:
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [1 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [2 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [3 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [4 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::main(java.lang.String[]) [5 time(s)]
+
+	---> behavioral.visitor.Product::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [1 time(s)]
+
+	---> behavioral.visitor.Product::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [2 time(s)]
+
+	---> behavioral.visitor.TaxVisitor::computeTaxForProducts(java.util.List,behavioral.visitor.TaxVisitor) [3 time(s)]
+
+behavioral.visitor.Tobacco:
+	---> behavioral.visitor.Visitor::accept(behavioral.visitor.Visitor) [1 time(s)]
+
+behavioral.visitor.Visitable:
+behavioral.visitor.Visitor:
+creational.abstract_factory.AbstractShapeFactory:
+	---> behavioral.visitor.Visitor::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [1 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [2 time(s)]
+
+	---> behavioral.visitor.Visitor::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.Rectangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.RoundedRectangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.RoundedShapeFactory:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.RoundedShapeType:
+creational.abstract_factory.RoundedTriangle:
+	---> creational.singleton.SingletonRegistry::draw() [1 time(s)]
+
+creational.abstract_factory.Shape:
+creational.abstract_factory.ShapeFactoryType:
+creational.abstract_factory.ShapeProducer:
+	---> creational.singleton.SingletonRegistry::createFactory(creational.abstract_factory.ShapeFactoryType) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::createFactory(creational.abstract_factory.ShapeFactoryType) [2 time(s)]
+
+creational.abstract_factory.ShapeType:
+creational.abstract_factory.StandardShapeFactory:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.abstract_factory.StandardShapeType:
+creational.abstract_factory.Test:
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.abstract_factory.AbstractShapeFactory::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.abstract_factory.Shape::main(java.lang.String[]) [10 time(s)]
+
+creational.abstract_factory.Triangle:
+	---> creational.abstract_factory.Shape::draw() [1 time(s)]
+
+creational.builder.IRobot:
+creational.builder.IRobotBuilder:
+creational.builder.OldRobotBuilder:
+	---> creational.builder.Robot::buildLegs() [1 time(s)]
+
+	---> creational.builder.Robot::buildArms() [1 time(s)]
+
+	---> creational.builder.Robot::buildHead() [1 time(s)]
+
+	---> creational.builder.Robot::buildTorso() [1 time(s)]
+
+creational.builder.Robot:
+	---> creational.builder.Robot::toString() [1 time(s)]
+
+	---> creational.builder.Robot::toString() [2 time(s)]
+
+	---> creational.builder.Robot::toString() [3 time(s)]
+
+	---> creational.builder.Robot::toString() [4 time(s)]
+
+	---> creational.builder.Robot::toString() [5 time(s)]
+
+creational.builder.RobotBuilder:
+creational.builder.RobotEngineer:
+	---> creational.builder.IRobotBuilder::getRobot() [1 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [1 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [2 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [3 time(s)]
+
+	---> creational.builder.IRobotBuilder::constructRobot() [4 time(s)]
+
+creational.builder.SophisticatedRobotBuilder:
+	---> creational.builder.Robot::buildLegs() [1 time(s)]
+
+	---> creational.builder.Robot::buildArms() [1 time(s)]
+
+	---> creational.builder.Robot::buildHead() [1 time(s)]
+
+	---> creational.builder.Robot::buildTorso() [1 time(s)]
+
+creational.builder.Test:
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [8 time(s)]
+
+creational.factory.BigUFOEnemyShip:
+	---> creational.builder.RobotEngineer::followHeroShip() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::enemyShipShoots() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::displayEnemyShip() [1 time(s)]
+
+creational.factory.EnemyShip:
+	---> creational.builder.RobotEngineer::followHeroShip() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::enemyShipShoots() [1 time(s)]
+
+	---> creational.builder.RobotEngineer::displayEnemyShip() [1 time(s)]
+
+creational.factory.EnemyShipFactory:
+creational.factory.EnemyShipTesting:
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.builder.RobotEngineer::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [1 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [2 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [3 time(s)]
+
+creational.factory.RocketEnemyShip:
+	---> creational.factory.EnemyShip::followHeroShip() [1 time(s)]
+
+	---> creational.factory.EnemyShip::enemyShipShoots() [1 time(s)]
+
+	---> creational.factory.EnemyShip::displayEnemyShip() [1 time(s)]
+
+creational.factory.Test:
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.factory.EnemyShip::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.factory.EnemyShipFactory::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [1 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [2 time(s)]
+
+	---> creational.factory.EnemyShip::doStuffEnemy(creational.factory.EnemyShip) [3 time(s)]
+
+creational.factory.UFOEnemyShip:
+	---> creational.factory.EnemyShip::followHeroShip() [1 time(s)]
+
+	---> creational.factory.EnemyShip::enemyShipShoots() [1 time(s)]
+
+	---> creational.factory.EnemyShip::displayEnemyShip() [1 time(s)]
+
+creational.prototype.Circle:
+	---> creational.factory.EnemyShip::draw() [1 time(s)]
+
+	---> creational.factory.EnemyShip::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.Position:
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Position::toString() [1 time(s)]
+
+creational.prototype.Rectangle:
+	---> creational.prototype.Position::draw() [1 time(s)]
+
+	---> creational.prototype.Position::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.Shape:
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.prototype.ShapeCache:
+	---> creational.prototype.Shape::getShape(java.lang.String) [1 time(s)]
+
+	---> creational.prototype.Shape::getShape(java.lang.String) [2 time(s)]
+
+	---> creational.prototype.Shape::displayCacheContent() [1 time(s)]
+
+	---> creational.prototype.Shape::displayCacheContent() [2 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [1 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [2 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [3 time(s)]
+
+	---> creational.prototype.Circle::loadCache() [4 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [5 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [6 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [7 time(s)]
+
+	---> creational.prototype.Triangle::loadCache() [8 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [9 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [10 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [11 time(s)]
+
+	---> creational.prototype.Rectangle::loadCache() [12 time(s)]
+
+creational.prototype.Test:
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.prototype.Rectangle::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [10 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [11 time(s)]
+
+	---> creational.prototype.Position::main(java.lang.String[]) [12 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [13 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [14 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [15 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [16 time(s)]
+
+	---> creational.prototype.Shape::main(java.lang.String[]) [17 time(s)]
+
+creational.prototype.Triangle:
+	---> creational.prototype.Shape::draw() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [1 time(s)]
+
+	---> creational.prototype.Shape::clone() [2 time(s)]
+
+	---> creational.prototype.Position::clone() [3 time(s)]
+
+	---> creational.prototype.Shape::clone() [4 time(s)]
+
+	---> creational.prototype.Shape::clone() [5 time(s)]
+
+	---> creational.prototype.Shape::toString() [1 time(s)]
+
+creational.singleton.ExtendedSingleton:
+	---> creational.prototype.Shape::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.prototype.Shape::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.ExtendedSingleton2:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.Singleton:
+	---> creational.singleton.SingletonRegistry::getRegistryKey(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::getInstance(java.lang.Class) [5 time(s)]
+
+creational.singleton.SingletonRegistry:
+	---> creational.singleton.SingletonRegistry::lookup(java.lang.String) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::register(java.lang.String,creational.singleton.Singleton) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::register(java.lang.String,creational.singleton.Singleton) [2 time(s)]
+
+creational.singleton.Test:
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [1 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [2 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [3 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [4 time(s)]
+
+	---> creational.singleton.SingletonRegistry::main(java.lang.String[]) [5 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [6 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [7 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [8 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [9 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [10 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [11 time(s)]
+
+	---> creational.singleton.ExtendedSingleton::main(java.lang.String[]) [12 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::main(java.lang.String[]) [13 time(s)]
+
+structural.adapter.EnemyAttacker:
+structural.adapter.EnemyRobot:
+	---> creational.singleton.ExtendedSingleton2::smashwithHands() [1 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::smashwithHands() [2 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::walkForward() [1 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::walkForward() [2 time(s)]
+
+	---> creational.singleton.ExtendedSingleton2::reactToHuman(java.lang.String) [1 time(s)]
+
+structural.adapter.EnemyRobotAdapter:
+	---> structural.adapter.EnemyRobot::driveForward() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::assignDriver(java.lang.String) [1 time(s)]
+
+structural.adapter.EnemyTank:
+	---> structural.adapter.EnemyRobot::driveForward() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::driveForward() [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::fireWeapon() [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::assignDriver(java.lang.String) [1 time(s)]
+
+structural.adapter.Test:
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [10 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [11 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [12 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [13 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [14 time(s)]
+
+structural.adapter.TestEnemyAttackers:
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.adapter.EnemyRobot::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [10 time(s)]
+
+	---> structural.adapter.EnemyTank::main(java.lang.String[]) [11 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [12 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [13 time(s)]
+
+	---> structural.adapter.EnemyAttacker::main(java.lang.String[]) [14 time(s)]
+
+structural.bridge.AdvancedRemote:
+	---> structural.bridge.Device::togglePower() [1 time(s)]
+
+	---> structural.bridge.Device::togglePower() [2 time(s)]
+
+	---> structural.bridge.Device::togglePower() [3 time(s)]
+
+	---> structural.bridge.Device::togglePower() [4 time(s)]
+
+	---> structural.bridge.Device::togglePower() [5 time(s)]
+
+	---> structural.bridge.Device::togglePower() [6 time(s)]
+
+	---> structural.bridge.Device::mute() [1 time(s)]
+
+	---> structural.bridge.Device::mute() [2 time(s)]
+
+	---> structural.bridge.Device::mute() [3 time(s)]
+
+	---> structural.bridge.Device::mute() [4 time(s)]
+
+	---> structural.bridge.Device::channelDown() [1 time(s)]
+
+	---> structural.bridge.Device::channelDown() [2 time(s)]
+
+	---> structural.bridge.Device::channelDown() [3 time(s)]
+
+	---> structural.bridge.Device::channelDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [1 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [2 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [3 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [1 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [2 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [3 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [4 time(s)]
+
+	---> structural.bridge.Device::channelUp() [1 time(s)]
+
+	---> structural.bridge.Device::channelUp() [2 time(s)]
+
+	---> structural.bridge.Device::channelUp() [3 time(s)]
+
+	---> structural.bridge.Device::channelUp() [4 time(s)]
+
+structural.bridge.Device:
+structural.bridge.Radio:
+structural.bridge.Remote:
+	---> structural.bridge.Device::togglePower() [1 time(s)]
+
+	---> structural.bridge.Device::togglePower() [2 time(s)]
+
+	---> structural.bridge.Device::togglePower() [3 time(s)]
+
+	---> structural.bridge.Device::togglePower() [4 time(s)]
+
+	---> structural.bridge.Device::togglePower() [5 time(s)]
+
+	---> structural.bridge.Device::togglePower() [6 time(s)]
+
+	---> structural.bridge.Device::channelDown() [1 time(s)]
+
+	---> structural.bridge.Device::channelDown() [2 time(s)]
+
+	---> structural.bridge.Device::channelDown() [3 time(s)]
+
+	---> structural.bridge.Device::channelDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [1 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [2 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [3 time(s)]
+
+	---> structural.bridge.Device::volumeDown() [4 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [1 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [2 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [3 time(s)]
+
+	---> structural.bridge.Device::volumeUp() [4 time(s)]
+
+	---> structural.bridge.Device::channelUp() [1 time(s)]
+
+	---> structural.bridge.Device::channelUp() [2 time(s)]
+
+	---> structural.bridge.Device::channelUp() [3 time(s)]
+
+	---> structural.bridge.Device::channelUp() [4 time(s)]
+
+structural.bridge.TV:
+structural.bridge.Test:
+	---> structural.bridge.Device::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.bridge.Device::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [1 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [2 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [3 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [4 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [5 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [6 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [7 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [8 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [9 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [10 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [11 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [12 time(s)]
+
+	---> structural.bridge.Remote::ordinaryRemoteTest(structural.bridge.Remote) [13 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [1 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [2 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [3 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [4 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [5 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [6 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [7 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [8 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [9 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [10 time(s)]
+
+	---> structural.bridge.AdvancedRemote::advancedRemoteTest(structural.bridge.AdvancedRemote) [11 time(s)]
+
+structural.composite.DiscJockey:
+	---> structural.composite.SongComponent::displaySongList() [1 time(s)]
+
+structural.composite.Song:
+	---> structural.composite.SongComponent::getInfo() [1 time(s)]
+
+	---> structural.composite.Song::getInfo() [2 time(s)]
+
+	---> structural.composite.Song::getInfo() [3 time(s)]
+
+	---> structural.composite.Song::getInfo() [4 time(s)]
+
+	---> structural.composite.Song::getInfo() [5 time(s)]
+
+	---> structural.composite.Song::getInfo() [6 time(s)]
+
+	---> structural.composite.Song::getInfo() [7 time(s)]
+
+	---> structural.composite.Song::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongComponent:
+	---> structural.composite.SongComponent::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongGroup:
+	---> structural.composite.SongComponent::add(structural.composite.SongComponent) [1 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [1 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [2 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [3 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [4 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [5 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [6 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [7 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [8 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [9 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [10 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [11 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [12 time(s)]
+
+	---> structural.composite.SongGroup::getInfo() [13 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [14 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [15 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [16 time(s)]
+
+	---> structural.composite.SongComponent::getInfo() [17 time(s)]
+
+	---> structural.composite.SongComponent::remove(structural.composite.SongComponent) [1 time(s)]
+
+	---> structural.composite.SongComponent::getComponent(int) [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [1 time(s)]
+
+	---> structural.composite.SongComponent::displayInfo() [2 time(s)]
+
+structural.composite.SongListGenerator:
+	---> structural.composite.SongComponent::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.composite.DiscJockey::main(java.lang.String[]) [10 time(s)]
+
+structural.composite.Test:
+	---> structural.composite.SongComponent::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [8 time(s)]
+
+	---> structural.composite.SongComponent::main(java.lang.String[]) [9 time(s)]
+
+	---> structural.composite.DiscJockey::main(java.lang.String[]) [10 time(s)]
+
+structural.decorator.Beverage:
+structural.decorator.BeverageDecorator:
+structural.decorator.CaramelDecorator:
+	---> structural.decorator.Beverage::description() [1 time(s)]
+
+	---> structural.decorator.Beverage::price() [1 time(s)]
+
+structural.decorator.Espresso:
+structural.decorator.IBeverage:
+structural.decorator.SugarDecorator:
+	---> structural.decorator.Beverage::description() [1 time(s)]
+
+	---> structural.decorator.Beverage::price() [1 time(s)]
+
+structural.decorator.Tea:
+structural.decorator.Test:
+	---> structural.decorator.Beverage::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [1 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [2 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [3 time(s)]
+
+	---> structural.decorator.Beverage::displayOrder(structural.decorator.Beverage) [4 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [1 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [2 time(s)]
+
+	---> structural.decorator.Beverage::beveragesMenu() [3 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [1 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [2 time(s)]
+
+	---> structural.decorator.Beverage::selectBeverage(java.util.Scanner) [3 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [1 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [2 time(s)]
+
+	---> structural.decorator.Beverage::selectAdditionalIngredients(structural.decorator.Beverage,java.util.Scanner) [3 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [1 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [2 time(s)]
+
+	---> structural.decorator.Beverage::orderBeverage() [3 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [1 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [2 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [3 time(s)]
+
+	---> structural.decorator.Beverage::additionalIngredientsMenu() [4 time(s)]
+
+structural.facade.BankAccount:
+structural.facade.BankAccountBalanceSystem:
+	---> structural.facade.BankAccount::canWithdraw(double) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountBalance() [1 time(s)]
+
+	---> structural.facade.BankAccount::deposit(double) [1 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::deposit(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [1 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [4 time(s)]
+
+	---> structural.facade.BankAccount::withdraw(double) [5 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [6 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [7 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdraw(double) [8 time(s)]
+
+structural.facade.BankAccountFacade:
+	---> structural.facade.BankAccountNumberChecker::depositCash(double) [1 time(s)]
+
+	---> structural.facade.BankAccountSecurityCodeChecker::depositCash(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::depositCash(double) [5 time(s)]
+
+	---> structural.facade.BankAccountNumberChecker::withdrawCash(double) [1 time(s)]
+
+	---> structural.facade.BankAccountSecurityCodeChecker::withdrawCash(double) [2 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [3 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [4 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [5 time(s)]
+
+	---> structural.facade.BankAccountBalanceSystem::withdrawCash(double) [6 time(s)]
+
+structural.facade.BankAccountNumberChecker:
+	---> structural.facade.BankAccountNumberChecker::match(int) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountNumber() [1 time(s)]
+
+structural.facade.BankAccountSecurityCodeChecker:
+	---> structural.facade.BankAccountSecurityCodeChecker::match(int) [1 time(s)]
+
+	---> structural.facade.BankAccount::getAccountSecurityCode() [1 time(s)]
+
+structural.facade.BankAccountWelcomeWindow:
+	---> structural.facade.BankAccount::setWelcomeMessage() [1 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [2 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [3 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [4 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [5 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [6 time(s)]
+
+	---> structural.facade.BankAccount::setWelcomeMessage() [7 time(s)]
+
+structural.facade.Test:
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [3 time(s)]
+
+structural.flyweight.Circle:
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [3 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [4 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [5 time(s)]
+
+	---> structural.facade.BankAccountFacade::draw(structural.flyweight.Position) [6 time(s)]
+
+structural.flyweight.Position:
+structural.flyweight.Shape:
+structural.flyweight.ShapeFactory:
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [2 time(s)]
+
+	---> structural.facade.BankAccountFacade::getCircle(java.lang.String) [3 time(s)]
+
+structural.flyweight.Test:
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.facade.BankAccountFacade::main(java.lang.String[]) [2 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [3 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [4 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [5 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [6 time(s)]
+
+	---> structural.flyweight.Circle::main(java.lang.String[]) [7 time(s)]
+
+	---> structural.flyweight.Circle::getRandomRadius() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomX() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomY() [1 time(s)]
+
+	---> structural.flyweight.Circle::getRandomColor() [1 time(s)]
+
+structural.proxy.Internet:
+structural.proxy.ProxyInternet:
+	---> structural.flyweight.Circle::connectTo(java.lang.String) [1 time(s)]
+
+	---> structural.flyweight.Circle::connectTo(java.lang.String) [2 time(s)]
+
+	---> structural.proxy.Internet::connectTo(java.lang.String) [3 time(s)]
+
+structural.proxy.RealInternet:
+	---> structural.proxy.Internet::connectTo(java.lang.String) [1 time(s)]
+
+structural.proxy.Test:
+	---> structural.proxy.Internet::main(java.lang.String[]) [1 time(s)]
+
+	---> structural.proxy.Internet::main(java.lang.String[]) [2 time(s)]
+
+

@@ -1,0 +1,119 @@
+Static Call Graph
+Classes: 5.
+Methods: 10.
+Invocations: 7.
+package1.B::B(java.lang.String):
+	---> package1.A::setStr(java.lang.String) [1 time(s)]
+
+package1.B::testStr():
+	---> package1.A::getStr() [3 time(s)]
+
+package1.B::toString():
+	---> package1.A::toString() [1 time(s)]
+	---> package1.A::getStr() [1 time(s)]
+
+package1.C::toString():
+	---> package1.A::toString() [1 time(s)]
+
+
+Static Call Graph
+Classes: 5.
+Methods: 10.
+Invocations: 6.
+package1.B::B(java.lang.String):
+	---> package1.A::setStr(java.lang.String) [1 time(s)]
+
+package1.B::testStr():
+	---> package1.A::getStr() [3 time(s)]
+
+package1.B::toString():
+	---> package1.A::getStr() [1 time(s)]
+
+package1.C::toString():
+	---> package1.A::toString() [1 time(s)]
+
+
+Static Call Graph
+Classes: 5.
+Methods: 11.
+Invocations: 8.
+package1.B::B(java.lang.String):
+	---> package1.A::setStr(java.lang.String) [1 time(s)]
+
+package1.B::testStr():
+	---> package1.A::getStr() [3 time(s)]
+
+package1.B::toString():
+	---> package1.A::getStr() [1 time(s)]
+
+package1.C::returnBoth():
+	---> package1.A::testStr() [1 time(s)]
+	---> package1.B::testStr() [1 time(s)]
+
+package1.C::toString():
+	---> package1.A::toString() [1 time(s)]
+
+
+Static Call Graph
+Classes: 5.
+Methods: 11.
+Invocations: 8.
+package1.B::B(java.lang.String):
+	---> package1.A::setStr(java.lang.String) [1 time(s)]
+
+package1.B::testStr():
+	---> package1.A::getStr() [3 time(s)]
+
+package1.B::toString():
+	---> package1.A::getStr() [1 time(s)]
+
+package1.C::returnBoth():
+	---> package1.A::testStr() [1 time(s)]
+	---> package1.B::testStr() [1 time(s)]
+
+package1.C::toString():
+	---> package1.A::toString() [1 time(s)]
+
+
+Static Call Graph
+Classes: 5.
+Methods: 11.
+Invocations: 8.
+package1.B::B(java.lang.String):
+	---> package1.A::setStr(java.lang.String) [1 time(s)]
+
+package1.B::testStr():
+	---> package1.A::getStr() [3 time(s)]
+
+package1.B::toString():
+	---> package1.A::getStr() [1 time(s)]
+
+package1.C::returnBoth():
+	---> package1.A::testStr() [1 time(s)]
+	---> package1.B::testStr() [1 time(s)]
+
+package1.C::toString():
+	---> package1.A::toString() [1 time(s)]
+
+
+Static Call Graph
+Classes: 5.
+Methods: 11.
+Invocations: 8.
+package1.B::B(java.lang.String):
+	---> package1.A::setStr(java.lang.String) [1 time(s)]
+
+package1.B::testStr():
+	---> package1.A::getStr() [3 time(s)]
+
+package1.B::toString():
+	---> package1.A::getStr() [1 time(s)]
+
+package1.C::returnBoth():
+	---> package1.A::testStr() [1 time(s)]
+	---> package1.B::testStr() [1 time(s)]
+
+package1.C::toString():
+	---> package1.A::toString() [1 time(s)]
+
+
